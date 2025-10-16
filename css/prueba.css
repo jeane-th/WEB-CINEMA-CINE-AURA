@@ -1,0 +1,30 @@
+.iconos-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 24px;
+}
+
+.icono {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.texto {
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+.icono:hover .texto {
+  opacity: 1;
+  width: auto;
+}

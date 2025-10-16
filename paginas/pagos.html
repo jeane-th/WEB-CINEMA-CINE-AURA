@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Lexend+Deca&family=Lexend+Giga&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="../css/pagos.css">
+    <title>CineAura | Pagos</title>
+</head>
+<body>
+    <header>
+    <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <div class="contenedor">
+                <div class="logo">
+                    <h1>Cine<span>Aura</span></h1>
+                </div>
+                <div class="menu">
+                    <a href="../paginas/peliculas.html">Películas</a>
+                    <a href="../paginas/boleteria.html">Boletería</a>
+                    <a href="../paginas/dulceria.html">Dulcería</a>
+                    <a href="../paginas/socios.html">Socios</a>
+                    <a href="../paginas/noticias.html">Noticias</a>
+                </div>
+                <div class="opciones">
+                    <a href="">
+                        <span class="material-icons-round">search</span>
+                    </a>
+                    <a href="">
+                        <span class="material-icons-round">account_circle</span>
+                    </a>
+                    <a href="">
+                        <span class="material-icons-round">help</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="titulo_pagina">
+            <h1>Pagos</h1>
+        </div>
+    <!-- FIN MENÚ DE NAVEGACIÓN -->
+    <main>
+        <section class="contenedor_lista">
+            <p id="titulo_lista"><strong>Carrito</strong> (3 productos)</p>
+            <div class="bloque_productos">
+                <div class="producto 1">
+                    <div class="imagen_producto">
+                        <img src="../imagenes/11.png" alt="">
+                    </div>
+                    <div class="info_producto">
+                        <div class="descripcion_producto">
+                            <h1>COMBO AURA DULCE</h1>
+                            <p>1 Canchita grande dulce + 1 Bebida (32oz)</p>
+                        </div>
+                        <div class="precio_cantidad">
+                            <p class="precio"><span>s/.</span> 27.00</p>
+                            <div class="cantidad">
+                                <div class="boton">
+                                    <iconify-icon icon="ic:round-minus" id="icono_menos"></iconify-icon>
+                                </div>
+                                <div class="numero_div">
+                                    <p id="numero">1</p>
+                                </div>
+                                <div class="boton">
+                                    <iconify-icon icon="ic:round-plus" id="icono_mas"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto 2">
+                    <div class="imagen_producto">
+                        <img src="../imagenes/15.png" alt="">
+                    </div>
+                    <div class="info_producto">
+                        <div class="descripcion_producto">
+                            <h1>COMBO SUPER FAMILIAR</h1>
+                            <p>1 Canchita extra gigante mixta + 4 Bebidas (32oz)</p>
+                        </div>
+                        <div class="precio_cantidad">
+                            <p class="precio"><span>s/.</span> 60.00</p>
+                            <div class="cantidad">
+                                <div class="boton">
+                                    <iconify-icon icon="ic:round-minus" id="icono_menos"></iconify-icon>
+                                </div>
+                                <div class="numero_div">
+                                    <p id="numero">1</p>
+                                </div>
+                                <div class="boton">
+                                    <iconify-icon icon="ic:round-plus" id="icono_mas"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="producto 3">
+                    <div class="imagen_producto">
+                        <img src="../imagenes/24.png" alt="">
+                    </div>
+                    <div class="info_producto">
+                        <div class="descripcion_producto">
+                            <h1>SNACKS SALADOS</h1>
+                            <p>Pretzels, papitas o nachitos.</p>
+                        </div>
+                        <div class="precio_cantidad">
+                            <p class="precio"><span>s/.</span> 5.00</p>
+                            <div class="cantidad">
+                                <div class="boton">
+                                    <iconify-icon icon="ic:round-minus" id="icono_menos"></iconify-icon>
+                                </div>
+                                <div class="numero_div">
+                                    <p id="numero">1</p>
+                                </div>
+                                <div class="boton">
+                                    <iconify-icon icon="ic:round-plus" id="icono_mas"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+    <!--  RESUMEN DE LA COMPRA -->
+        <aside class="resumen_compra">
+            <h2 id="resumen_titulo">Resumen de la compra</h2>
+            <div class="resumen_contenedor">
+                <div class="parrafo">
+                    <p><strong>Productos (3)</strong></p>
+                    <p class="precio_resumen">s/. 93.00</p>
+                </div>
+                <div class="parrafo">
+                    <p><strong>Descuento</strong></p>
+                    <p class="precio_resumen">s/. 9.30</p>
+                </div>
+                <br>
+                <form class="descuento">
+                    <label for="codigo">Ingresa tu código de descuento</label>
+                    <div class="aplicar_descuento">
+                        <input type="text" id="codigo" name="codigo" placeholder="Ej: CINEAURA2025">
+                        <button type="submit">Aplicar</button>
+                    </div>
+                </form>
+                <br>
+                <hr>
+                <br>
+                <div class="parrafo">
+                    <p><strong>Total</strong></p>
+                    <p class="precio_resumen">s/. 83.70</p>
+                </div>
+                <div class="boton_continuar_compra">
+                    <a href="#">Continuar compra</a>
+                </div>
+            </div>
+        </aside>
+    <!--  FIN RESUMEN DE LA COMPRA -->
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_content">
+                <h4>Cine<span>Aura</span></h4>
+                <div class="footer_contact">
+                    <p><span>Teléfono:</span> (01) 123-4567</p>
+                    <p><span>Correo:</span> contacto@cineaura.com</p>
+                    <p><span>Horario:</span> Lun - Dom</p>
+                </div>
+                <div class="footer_links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Política de cookies</a>
+                </div>
+                <div class="footer_social">
+                    <p>Síguenos en:</p>
+                    <div class="social_icons">
+                        <a href="#"><img src="../imagenes/facebook.png"></a>
+                        <a href="#"><img src="../imagenes/instagram.png"></a>
+                        <a href="#"><img src="../imagenes/tiktok.png"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_text">
+                <p>&copy; 2025 CineAura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+iconify-icon {
+    color: white;
+    font-size: 35px;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #121212;
+}
+
+nav {
+    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0.05));
+    border-bottom: solid 1px rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(25px);
+    padding: 1rem 0;
+}
+
+.contenedor {
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    color: white;
+}
+
+.logo span {
+    color: #ed0133;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu a {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.8);
+    text-shadow: 0 2px 4px #121212;
+    padding: 3px 7px;
+    border-radius: 18px;
+    border: 2px solid transparent;
+}
+
+.menu #boletería {
+    color: white;
+    background-color: #ed0133;
+    
+}
+
+.menu a:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+.opciones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opciones a {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.icon_texto {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    transition: opacity 0.3s ease, width 0.3s ease, margin-right 0.3s ease;
+}
+
+.opciones a:hover .icon_texto {
+    opacity: 1;
+    width: auto;
+    margin-right: 6px;
+}
+
+.material-icons-round {
+    font-size: 28px;
+    color: white;
+}
+
+/*CONTENIDO*/
+
+.box_1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 30px 0 80px 0;
+}
+
+.titulo h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #121212;
+    padding: 10px 0 10px 0;
+    padding-left: 150px;
+    background-color: #ed0133;
+    background: linear-gradient(to bottom right, #FF0036, #BC0028);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    width: 25rem;
+}
+
+.box_2 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+}
+
+.img_pelicula {
+    width: 220px;
+}
+
+.box_2_texto {
+    background-color: #1e1e1e;
+    width: 220px;
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.box_2_texto h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.box_2_texto p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.box_4 {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+.info_peli {
+    padding-right: 50px;
+    border-right: 1px solid white;
+}
+
+.info_peli h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.info_peli p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon_watch {
+    font-size: 24px;
+}
+
+.selector_peli {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 40px; 
+}
+
+#fecha {
+    border-right: 1px solid white;
+}
+
+#hora {
+    padding-right: 0;
+}
+
+.selector_peli p {
+    color: white;
+    font-size: 1.4rem;
+    background-color: #ed0133;
+    border-radius: 19px;
+    border-bottom-left-radius: 0px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.selector_peli select, option {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.selector_peli select {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-right: 35px;
+}
+
+.selector_peli option {
+    background-color: transparent;
+    color: #121212;
+}
+
+.seccion-butacas {
+    margin: 30px 0 15px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.seccion-butacas h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.pantalla {
+    text-align: center;
+    background-color: #ed0133;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.butacas {
+    border-spacing: 10px;
+}
+
+.letra, .numero {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.pasillo {
+    width: 30px;
+    height: 25px;
+}
+
+.butaca {
+    width: 30px;
+    height: 25px;
+    background-color: #d6d6d6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.butaca:hover {
+    background-color: #999999;
+}
+
+.butaca.ocupada {
+    background-color: #444;
+    cursor: not-allowed;
+}
+
+.butaca.seleccionada {
+    background-color: #ed0133;
+}
+
+.leyenda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.box_6 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_7 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#box_7_text {
+    color: white;
+    font-size: 1.4rem;
+}
+
+#butaca_e {
+    color: #ed0133;
+    font-size: 1.3rem;
+    padding: 3px 10px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 18px;
+}
+
+#boton_comprar {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Lexend Deca';
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ed0133;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.icon_tickets {
+    font-size: 24px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    height: 180px;
+}
+
+.footer {
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.footer_content h4 {
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    padding: 20px 0;
+}
+
+.footer_content span {
+    color: #ed0133;
+}
+
+.footer_contact {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_contact span {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_links a {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer_social {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer_social p {
+    margin-bottom: 10px;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social_icons a img {
+    width: 20px;
+}
+
+hr {
+    border: 1px solid white; 
+}
+
+.footer_text {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}

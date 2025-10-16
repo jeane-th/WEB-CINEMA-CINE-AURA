@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend+Giga:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+iconify-icon {
+    color: white;
+    font-size: 35px;
+}
+
+icon_tickets {
+    font-size: 28px;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #121212;
+}
+
+header {
+    position: relative;
+    text-align: left;
+    padding: 10px 0;
+}
+
+nav {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 70px;
+    padding: 15px 30px;
+    background: linear-gradient(to top, rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.contenedor {
+    max-width: 1140px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    color: white;
+}
+
+.logo span {
+    color: #ed0133;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    transition: color 0.3s ease;
+}
+
+.menu a {
+    color: white;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #ed0133;
+    width: auto;
+    height: 33px;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 16px;
+    border-color: #ed0133;
+}
+
+.opciones {
+    text-decoration: none;
+}
+
+.opciones a {
+    color: white;
+}
+
+.titulo_pagina {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 100px 0 20px 0;
+    background: linear-gradient(to bottom, #FF0036, #BC0028);
+    border-left: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.titulo_pagina h1 {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10vw;
+    margin-right: 20px;
+}
+
+/*CONTENIDO DE LA PAGINA*/
+
+main {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 700px;
+    margin: 20px 10% 50px 10%;
+    color: rgb(248, 242, 242);
+    border-radius: 2vw;
+    background: linear-gradient(to top, rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.contenedor_lista {
+    box-sizing: border-box;
+    width: 60%;
+    min-width: 500px;
+    padding: 3vw;
+    padding-right: 1.5vw;
+    border-radius: 40px;
+}
+
+#titulo_lista {
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.bloque_productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, white, #e9e9e9);
+}
+
+.imagen_producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 140px;
+}
+
+.imagen_producto img {
+    width: auto;
+    height: 140px;
+}
+
+.info_producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: 15px 0;
+    margin-right: 25px;
+}
+
+.descripcion_producto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.descripcion_producto h1 {
+    color: #ed0133;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    width: 100%;
+}
+
+.descripcion_producto p {
+    color: #1e1e1e;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+.precio_cantidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.precio {
+    display: flex;
+    align-items: flex-end;
+    color: #ed0133;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
+    gap: 10px;
+}
+
+.precio span {
+    font-size: 15px;
+    letter-spacing: -1px;
+    padding-bottom: 3px;
+}
+
+.cantidad {
+    display: flex;
+    justify-content: center;
+}
+
+.numero_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: #1e1e1e;
+}
+
+#numero {
+    font-size: 20px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: #ed0133;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#icono_mas {
+    color: white;
+    font-size: 20px;
+}
+
+#icono_menos {
+    color:white;
+    font-size: 20px;
+}
+
+.resumen_compra {
+    box-sizing: border-box;
+    width: 40%;
+    min-width: 300px;
+    padding: 3vw;
+    padding-left: 1.5vw;
+    border-radius: 40px;
+}
+
+#resumen_titulo {
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.resumen_contenedor {
+    padding: 25px;
+    border-radius: 30px;
+    background-color:#e9e9e9;
+    color: #1e1e1e;
+}
+
+.parrafo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 330px;
+    justify-content: space-between;
+}
+
+.precio_resumen {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    width: 80px;
+    padding: 0;
+}
+
+.descuento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.descuento label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.aplicar_descuento {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+.descuento input {
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 40px;
+    width: 100%;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+.descuento button {
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: gray;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+}
+
+.resumen_compra hr {
+    border: 1px solid #1e1e1e;
+}
+
+.boton_continuar_compra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ed0133 ;
+    border-radius: 25px;
+    margin-top: 30px;
+    padding: 12px;
+}
+
+.boton_continuar_compra a{
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1e1e1e;
+    height: 180px;
+}
+
+.footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.footer_content h4 {
+    font-family: 'Lexend Giga', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    padding: 20px 0;
+}
+
+.footer_content span {
+    color: #ed0133;
+}
+
+.footer_contact {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_contact span {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_links a {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer_social {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer_social p {
+    margin-bottom: 10px;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social_icons a img {
+    width: 20px;
+}
+
+hr {
+    border: 1px solid white; 
+}
+
+.footer_text {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}

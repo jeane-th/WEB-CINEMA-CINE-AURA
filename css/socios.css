@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+iconify-icon {
+    color: white;
+    font-size: 35px;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #121212;
+}
+
+nav {
+    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0.05));
+    border-bottom: solid 1px rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(25px);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.contenedor {
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    color: white;
+}
+
+.logo span {
+    color: #ed0133;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu a {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.8);
+    text-shadow: 0 2px 4px #121212;
+    padding: 3px 7px;
+    border-radius: 18px;
+    border: 2px solid transparent;
+}
+
+.menu #seleccion {
+    color: white;
+    background-color: #ed0133;
+}
+
+.menu a:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+.opciones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opciones a {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.icon_texto {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    transition: opacity 0.3s ease, width 0.3s ease, margin-right 0.3s ease;
+}
+
+.opciones a:hover .icon_texto {
+    opacity: 1;
+    width: auto;
+    margin-right: 6px;
+}
+
+.material-icons-round {
+    font-size: 28px;
+    color: white;
+}
+
+#icono-socios {
+    margin: 20px 0px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+}
+
+
+
+
+
+
+main {
+    margin-top: 60px;
+}
+
+h1 {
+    margin: 30px 30px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.tarjeta_1 {
+    display: flex;
+    margin: 20px 0px;
+    color: white;
+}
+
+
+.tarjeta_2 {
+    display: flex;
+    margin: 20px 0px;
+    color: white;
+}
+
+.tarjeta_3 {
+    display: flex;
+    margin: 20px 0px;
+    color: white;
+}
+
+.tarjeta_4 {
+    display: flex;
+    margin: 20px 0px;
+    color: white;
+}
+
+.tarjeta_1 strong {
+    margin: 20px 0px;
+    background-color: rgb(252, 11, 83);
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 0px 20px 20px;
+    padding: 10px;
+}
+
+.tarjeta_2 strong {
+    margin: 20px 0px;
+    background-color: rgb(252, 11, 83);
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 0px 20px 20px;
+    padding: 10px;
+}
+
+
+.tarjeta_3 strong {
+    margin: 20px 0px;
+    background-color: rgb(252, 11, 83);
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 0px 20px 20px;
+    padding: 10px;
+}
+
+
+.tarjeta_4 strong {
+    margin: 20px 0px;
+    background-color: rgb(252, 11, 83);
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 0px 20px 20px;
+    padding: 10px;
+}
+
+.startext {
+    background-color: #2cccd3;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+}
+
+.terminos {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ddd;
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+
+.plan_start {
+    background: #2cccd3;
+    border: 2px solid white;
+}
+
+.plan_plus {
+    background: #9a7dd7;
+    border: 2px solid white;
+}
+
+.plan_premium {
+    background: #f06060;
+    border: 2px solid white;
+}
+
+.plan_black {
+    background: #333;
+    border: 2px solid white;
+}
+
+
+
+
+.plan {
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+}
+
+
+.plan h3 {
+    margin-top: 0;
+}
+
+
+
+.plan ul {
+    padding-left: 20px;
+}
+
+
+.formatoimagen {
+    display: flex;
+
+}
+
+.precio {
+    background-color: red;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.tarjeta-hijo2{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.opciones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opciones a {
+    color: white;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.material-icons-round {
+    font-size: 28px;
+    color: white;
+}
+
+
+footer {
+    background-color: #1e1e1e;
+    height: 180px;
+}
+
+.footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.footer_content h4 {
+    font-family: 'Lexend Giga', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    padding: 20px 0;
+}
+
+.footer_content span {
+    color: #ed0133;
+}
+
+.footer_contact {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_contact span {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_links a {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer_social {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer_social p {
+    margin-bottom: 10px;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social_icons a img {
+    width: 20px;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.footer_text {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}

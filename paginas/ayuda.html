@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="../css/ayuda.css">
+    <title>CineAura | Ayuda</title>
+</head>
+
+<body>
+    <header>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <div class="contenedor">
+                <div class="logo">
+                    <a href="../index.html">Cine<span>Aura</span></a>
+                </div>
+                <div class="menu">
+                    <a href="../paginas/peliculas.html">Películas</a>
+                    <a href="../paginas/boleteria.html">Boletería</a>
+                    <a href="../paginas/dulceria.html">Dulcería</a>
+                    <a href="../paginas/socios.html">Socios</a>
+                    <a href="../paginas/noticias.html">Noticias</a>
+                </div>
+                <div class="opciones">
+                    <a href="#">
+                        <span class="icon_texto">Buscar</span>
+                        <span class="material-icons-round">search</span>
+                    </a>
+                    <a href="../paginas/acceder.html">
+                        <span class="icon_texto">Acceder</span>
+                        <span class="material-icons-round">account_circle</span>
+                    </a>
+                    <a href="../paginas/ayuda.html">
+                        <span class="icon_texto">Ayuda</span>
+                        <span class="material-icons-round">help</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- FIN MENÚ DE NAVEGACIÓN -->
+    </header>
+
+
+    <div class="contenedor-contactos">
+
+        <h1>Contáctanos</h1>
+        <p class="titulo-contactos">Atención de Consultas o Incidencias</p>
+        <p>Para asegurar la calidad y optimización de nuestro servicio, por favor llenar todos los campos que
+            solicitamos. ¡Gracias!</p>
+        <br>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+            <span class="error">Este campo es requerido.</span>
+
+            <div class="form-fila">
+                <div>
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido">
+                </div>
+                <div>
+                    <label>¿Eres socio Cineplanet?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="socio" value="si"> Sí</label>
+                        <label><input type="radio" name="socio" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div>
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono de contacto</label>
+                    <input type="text" id="telefono">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email">
+                </div>
+            </div>
+
+            <label for="motivo">Motivo</label>
+            <select id="motivo">
+                <option value="">Seleccione una opción</option>
+            </select>
+
+            <label for="mensaje">Mensaje <small>- Por favor ingrese aquí todos los detalles de tu caso.</small></label>
+            <textarea id="mensaje"></textarea>
+            <small>Caracteres restantes: 5000</small>
+
+            <div class="caja-subir-archivo">
+                Escoge un archivo o arrástralo.<br>
+                <small>Tamaño máximo permitido: 5MB<br>Archivos permitidos: JPG, PNG, PDF, DOCX</small>
+            </div>
+
+            <div class="checkbox">
+                <label><input type="checkbox"> Acepto los <a href="#">Términos y Condiciones</a>, <a href="#">Política
+                        de Privacidad</a> y <a href="#">Tratamiento necesario de datos</a></label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> He leído y acepto las finalidades de tratamiento adicionales.</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Acepto el tratamiento opcional de datos.</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+    </form>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer_content">
+                <h4>Cine<span>Aura</span></h4>
+                <div class="footer_contact">
+                    <p><span>Teléfono:</span> (01) 123-4567</p>
+                    <p><span>Correo:</span> contacto@cineaura.com</p>
+                    <p><span>Horario:</span> Lun - Dom</p>
+                </div>
+                <div class="footer_links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Política de cookies</a>
+                </div>
+                <div class="footer_social">
+                    <p>Síguenos en:</p>
+                    <div class="social_icons">
+                        <a href="#"><img src="../imagenes/facebook.png"></a>
+                        <a href="#"><img src="../imagenes/instagram.png"></a>
+                        <a href="#"><img src="../imagenes/tiktok.png"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_text">
+                <p>&copy; 2025 CineAura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>

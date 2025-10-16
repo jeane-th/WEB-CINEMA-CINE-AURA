@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+iconify-icon {
+    color: white;
+    font-size: 35px;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #121212;
+}
+
+nav {
+    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0.05));
+    border-bottom: solid 1px rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(25px);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.contenedor {
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    color: white;
+}
+
+.logo span {
+    color: #ed0133;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu a {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.8);
+    text-shadow: 0 2px 4px #121212;
+    padding: 3px 7px;
+    border-radius: 18px;
+    border: 2px solid transparent;
+}
+
+.menu a:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+.opciones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opciones a {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.icon_texto {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    transition: opacity 0.3s ease, width 0.3s ease, margin-right 0.3s ease;
+}
+
+.opciones a:hover .icon_texto {
+    opacity: 1;
+    width: auto;
+    margin-right: 6px;
+}
+
+.material-icons-round {
+    font-size: 28px;
+    color: white;
+}
+
+/*----------FORMULARIO-------------------*/
+
+.contenedor-contactos {
+    width: 90%;
+    max-width: 800px;
+    margin: 120px auto 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.contenedor-contactos h1 {
+    color: black;
+}
+
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.form-fila {
+    display: flex;
+    gap: 10px;
+}
+
+.form-fila div {
+    flex: 1;
+}
+
+
+.titulo-contactos {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.caja-subir-archivo {
+    margin-top: 15px;
+    padding: 30px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    color: #666;
+    border-radius: 6px;
+}
+
+.checkbox {
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #C80064;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a00050;
+}
+
+small {
+    color: #888;
+    font-size: 12px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/*--------------------------------*/
+
+/*FOOTER*/
+footer {
+    background-color: #1e1e1e;
+}
+
+.footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.footer_content h4 {
+    font-family: 'Lexend Giga', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: -0.05em;
+    padding: 20px 0;
+}
+
+.footer_content span {
+    color: #ed0133;
+}
+
+.footer_contact {
+    color: white;
+    font-weight: 300;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_contact span {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_links a {
+    color: white;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.footer_social {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.footer_social p {
+    margin-bottom: 10px;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.footer_text {
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 15px;
+}

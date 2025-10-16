@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="../css/boleteria.css">
+    <title>CineAura | Boletería</title>
+</head>
+
+<body>
+    <header>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <div class="contenedor">
+                <div class="logo">
+                    <a href="../index.html">Cine<span>Aura</span></a>
+                </div>
+                <div class="menu">
+                    <a href="../paginas/peliculas.html">Películas</a>
+                    <a id="boletería" href="../paginas/boleteria.html">Boletería</a>
+                    <a href="../paginas/dulceria.html">Dulcería</a>
+                    <a href="../paginas/socios.html">Socios</a>
+                    <a href="../paginas/noticias.html">Noticias</a>
+                </div>
+                <div class="opciones">
+                    <a href="#">
+                        <span class="icon_texto">Buscar</span>
+                        <span class="material-icons-round">search</span>
+                    </a>
+                    <a href="../paginas/acceder.html">
+                        <span class="icon_texto">Acceder</span>
+                        <span class="material-icons-round">account_circle</span>
+                    </a>
+                    <a href="../paginas/ayuda.html">
+                        <span class="icon_texto">Ayuda</span>
+                        <span class="material-icons-round">help</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- FIN MENÚ DE NAVEGACIÓN -->
+    </header>
+    <main>
+        <div class="box_1">
+            <div class="titulo">
+                <h2>Boletería</h2>
+                <div class="box_2">
+                    <img src="../imagenes/pelicula_3.jpeg" class="img_pelicula">
+                    <div class="box_2_texto">
+                        <h4>Director:</h4>
+                        <p>Dean Fleisch Camp</p>
+                        <h4>Reparto:</h4>
+                        <p>Sydney Agudong, Maia Kealoha, Chris Sanders</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_3">
+                <div class="box_4">
+                    <div class="info_peli">
+                        <h3>Lilo y Stitch</h3>
+                        <p>
+                            <iconify-icon icon="ic:outline-watch-later" class="icon_watch"></iconify-icon>
+                            1h 48m - Familiar - APT
+                        </p>
+                    </div>
+                    <div class="selector_peli" id="fecha">
+                        <p>Día:</p>
+                        <select name="opcion">
+                            <option value="" selected="selected">Lunes, 30 de jun.</option>
+                            <option value="">Martes, 01 de jul.</option>
+                            <option value="">Miércoles, 02 de jul.</option>
+                            <option value="">Jueves, 03 de jul.</option>
+                            <option value="">Viernes, 04 de jul.</option>
+                            <option value="">Sábado, 05 de jul.</option>
+                        </select>
+                    </div>
+                    <div class="selector_peli" id="hora">
+                        <p>Hora:</p>
+                        <select name="opcion">
+                            <option value="" selected="selected">11:30 a.m.</option>
+                            <option value="">1:15 p.m.</option>
+                            <option value="">3:45 p.m.</option>
+                            <option value="">5:30 p.m.</option>
+                            <option value="">7:15 p.m.</option>
+                            <option value="">9:00 p.m.</option>
+                        </select>
+                    </div>
+                </div>
+                <section class="seccion-butacas">
+                    <h2>Selecciona tu asiento</h2>
+                    <div class="box_5">
+                        <div class="pantalla">Pantalla</div>
+                        <table class="butacas">
+                            <tr>
+                                <td class="letra">A</td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="letra">A</td>
+                            </tr>
+                            <tr>
+                                <td class="letra">B</td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="letra">B</td>
+                            </tr>
+                            <tr>
+                                <td class="letra">C</td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="letra">C</td>
+                            </tr>
+                            <tr>
+                                <td class="letra">D</td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="letra">D</td>
+                            </tr>
+                            <tr>
+                                <td class="letra">E</td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca seleccionada"></td>
+                                <td class="butaca seleccionada"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="letra">E</td>
+                            </tr>
+                            <tr>
+                                <td class="letra">F</td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="letra">F</td>
+                            </tr>
+                            <tr>
+                                <td class="letra">G</td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="butaca"></td>
+                                <td class="pasillo"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="butaca ocupada"></td>
+                                <td class="letra">G</td>
+                            </tr>
+                            <tr>
+                                <td class="pasillo"></td>
+                                <td class="numero">1</td>
+                                <td class="numero">2</td>
+                                <td class="pasillo"></td>
+                                <td class="numero">3</td>
+                                <td class="numero">4</td>
+                                <td class="numero">5</td>
+                                <td class="numero">6</td>
+                                <td class="numero">7</td>
+                                <td class="numero">8</td>
+                                <td class="numero">9</td>
+                                <td class="numero">10</td>
+                                <td class="pasillo"></td>
+                                <td class="numero">11</td>
+                                <td class="numero">12</td>
+                                <td class="pasillo"></td>
+                            </tr>
+                        </table>
+                        <div class="leyenda">
+                            <table class="butacas">
+                                <tr>
+                                    <td class="butaca"></td>
+                                    <td class="letra">Disponible</td>
+                                </tr>
+                            </table>
+                            <table class="butacas">
+                                <tr>
+                                    <td class="butaca ocupada"></td>
+                                    <td class="letra">Ocupado</td>
+                                </tr>
+                            </table>
+                            <table class="butacas">
+                                <tr>
+                                    <td class="butaca seleccionada"></td>
+                                    <td class="letra">Seleccionado</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <div class="box_6">
+                    <div class="box_7">
+                        <p id="box_7_text">Butacas seleccionadas:</p>
+                        <p id="butaca_e">E-6</p>
+                        <P id="butaca_e">E-7</P>
+                    </div>
+                    <a href="../paginas/pagos.html">
+                        <button id="boton_comprar">Comprar
+                            <iconify-icon icon="f7:tickets-fill" class="icon_tickets"></iconify-icon>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_content">
+                <h4>Cine<span>Aura</span></h4>
+                <div class="footer_contact">
+                    <p><span>Teléfono:</span> (01) 123-4567</p>
+                    <p><span>Correo:</span> contacto@cineaura.com</p>
+                    <p><span>Horario:</span> Lun - Dom</p>
+                </div>
+                <div class="footer_links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Política de cookies</a>
+                </div>
+                <div class="footer_social">
+                    <p>Síguenos en:</p>
+                    <div class="social_icons">
+                        <a href="#"><img src="../imagenes/facebook.png"></a>
+                        <a href="#"><img src="../imagenes/instagram.png"></a>
+                        <a href="#"><img src="../imagenes/tiktok.png"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_text">
+                <p>&copy; 2025 CineAura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

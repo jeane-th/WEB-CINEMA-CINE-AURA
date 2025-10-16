@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="../css/peliculas.css">
+    <title>CineAura | Películas</title>
+</head>
+
+<body>
+    <header>
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <div class="contenedor">
+                <div class="logo">
+                    <a href="../index.html">Cine<span>Aura</span></a>
+                </div>
+                <div class="menu">
+                    <a id="peliculas" href="../paginas/peliculas.html">Películas</a>
+                    <a href="../paginas/boleteria.html">Boletería</a>
+                    <a href="../paginas/dulceria.html">Dulcería</a>
+                    <a href="../paginas/socios.html">Socios</a>
+                    <a href="../paginas/noticias.html">Noticias</a>
+                </div>
+                <div class="opciones">
+                    <a href="#">
+                        <span class="icon_texto">Buscar</span>
+                        <span class="material-icons-round">search</span>
+                    </a>
+                    <a href="../paginas/acceder.html">
+                        <span class="icon_texto">Acceder</span>
+                        <span class="material-icons-round">account_circle</span>
+                    </a>
+                    <a href="../paginas/ayuda.html">
+                        <span class="icon_texto">Ayuda</span>
+                        <span class="material-icons-round">help</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- FIN MENÚ DE NAVEGACIÓN -->
+    </header>
+    <main>
+        <div class="box_1">
+            <div class="titulo">
+                <h2>Películas</h2>
+                <div class="filtro">
+                    <span>
+                        <iconify-icon icon="mage:filter" class="icon_filter"></iconify-icon>
+                        Filtrar
+                    </span>
+                    <div class="filtro_categorias">
+                        <select name="genero">
+                            <option value="" disabled selected>Género</option>
+                            <option value="">Acción</option>
+                            <option value="">Anime</option>
+                            <option value="">Comedia</option>
+                            <option value="">Drama</option>
+                            <option value="">Familiar</option>
+                            <option value="">Romance</option>
+                            <option value="">Suspenso</option>
+                            <option value="">Terror</option>
+                            <option value="">Thriller</option>
+                        </select>
+                        <select name="idioma">
+                            <option value="" disabled selected>Idioma</option>
+                            <option value="">Doblada</option>
+                            <option value="">Subtitulada</option>
+                        </select>
+                        <select name="formato">
+                            <option value="" disabled selected>Formato</option>
+                            <option value="">2D</option>
+                            <option value="">3D</option>
+                        </select>
+                        <select name="clasificacion">
+                            <option value="" disabled selected>Clasificación</option>
+                            <option value="">APT</option>
+                            <option value="">+14</option>
+                            <option value="">+18</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="secciones">
+                    <h3 id="cartelera"><a href="../paginas/peliculas.html">CARTELERA</a></h3>
+                    <h3 class="text_efecto"><a href="../paginas/estrenos.html">PRÓXIMAMENTE</a></h3>
+                    <h3 class="text_efecto"><a href="">PREVENTA</a></h3>
+                </div>
+                <div class="cont_cartelera">
+                    <div class="cont_pelicula">
+                        <img src="../imagenes/pelicula_4.jpeg">
+                        <h4>Cuadrilátero</h4>
+                        <span>1h 25m | +14</span>
+                        <button>Ver Horarios</button>
+                    </div>
+                    <div class="cont_pelicula">
+                        <img src="../imagenes/pelicula_2.jpeg">
+                        <h4>Destino final: Lazos de sangre</h4>
+                        <span>1h 49m | +14</span>
+                        <button>Ver Horarios</button>
+                    </div>
+                    <div class="cont_pelicula">
+                        <img src="../imagenes/pelicula_6.png">
+                        <h4>DAN DA DAN: Evil Eye</h4>
+                        <span>1h 33m | +14</span>
+                        <button>Ver Horarios</button>
+                    </div>
+                    <div class="cont_pelicula">
+                        <img src="../imagenes/pelicula_1.jpeg">
+                        <h4>Bailarina</h4>
+                        <span>2h 5m | +14</span>
+                        <button>Ver Horarios</button>
+                    </div>
+                    <div class="cont_pelicula">
+                        <img src="../imagenes/pelicula_3.jpeg">
+                        <h4>Lilo y Stitch</h4>
+                        <span>1h 40m | +14</span>
+                        <button>Ver Horarios</button>
+                    </div>
+                    <div class="cont_pelicula">
+                        <img src="../imagenes/pelicula_1.jpeg">
+                        <h4>Cuadrilátero</h4>
+                        <span>1h 25m | +14</span>
+                        <button>Ver Horarios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_content">
+                <h4>Cine<span>Aura</span></h4>
+                <div class="footer_contact">
+                    <p><span>Teléfono:</span> (01) 123-4567</p>
+                    <p><span>Correo:</span> contacto@cineaura.com</p>
+                    <p><span>Horario:</span> Lun - Dom</p>
+                </div>
+                <div class="footer_links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Política de cookies</a>
+                </div>
+                <div class="footer_social">
+                    <p>Síguenos en:</p>
+                    <div class="social_icons">
+                        <a href="#"><img src="../imagenes/facebook.png"></a>
+                        <a href="#"><img src="../imagenes/instagram.png"></a>
+                        <a href="#"><img src="../imagenes/tiktok.png"></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_text">
+                <p>&copy; 2025 CineAura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
