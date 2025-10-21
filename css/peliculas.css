@@ -67,7 +67,7 @@ nav {
 .menu #peliculas {
     color: white;
     background-color: #ed0133;
-    
+
 }
 
 .menu a:hover {
@@ -113,7 +113,12 @@ main {
 .box_1 {
     display: flex;
     align-items: flex-start;
-    margin: 30px 0 80px 0;
+    justify-content: space-between;
+    margin: 30px 0 0px 0;
+
+}
+.titulo{
+    flex-basis: 30%
 }
 
 .titulo h2 {
@@ -130,8 +135,14 @@ main {
     width: 25rem;
 }
 
+.contenido {
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 124px;
+}
+
 .filtro {
-    margin-left: 150px;
     margin-top: 40px;
 }
 
@@ -150,9 +161,11 @@ main {
 .filtro_categorias {
     display: flex;
     flex-direction: column;
+    width: 233px;
 }
 
-.filtro_categorias select, option {
+.filtro_categorias select,
+option {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 1.3rem;
     font-weight: 300;
@@ -174,6 +187,25 @@ main {
     color: #121212;
 }
 
+.listaFiltros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filtro-boton {
+    background-color: transparent;
+    border: 2px solid #FF0036;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 .secciones {
     display: flex;
     gap: 2.5rem;
@@ -182,6 +214,7 @@ main {
     height: 80px;
     align-items: center;
     padding-left: 70px;
+    flex: 1;
 }
 
 .secciones a {
@@ -207,10 +240,11 @@ main {
 .cont_cartelera {
     display: flex;
     flex-wrap: wrap;
-    gap: 4.5rem;
+    gap: 3.5rem;
     margin-top: 40px;
-    padding-left: 70px;
     border-left: 1px solid white;
+    justify-content: flex-end;
+
 }
 
 .cont_cartelera h4 {
@@ -252,7 +286,7 @@ main {
 }
 
 .cont_pelicula img:hover {
-    box-shadow: 0 0 15px 5px rgba(237, 1, 51, 0.7) ;
+    box-shadow: 0 0 15px 5px rgba(237, 1, 51, 0.7);
 }
 
 footer {
@@ -334,7 +368,7 @@ footer {
 }
 
 hr {
-    border: 1px solid white; 
+    border: 1px solid white;
 }
 
 .footer_text {
