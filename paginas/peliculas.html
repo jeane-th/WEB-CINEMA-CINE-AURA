@@ -19,22 +19,22 @@
                     <a href="../index.html">Cine<span>Aura</span></a>
                 </div>
                 <div class="menu">
-                    <a id="peliculas" href="peliculas.html">Películas</a>
-                    <a href="boleteria.html">Boletería</a>
-                    <a href="dulceria.html">Dulcería</a>
-                    <a href="socios.html">Socios</a>
-                    <a href="noticias.html">Noticias</a>
+                    <a id="peliculas" href="../paginas/peliculas.html">Películas</a>
+                    <a href="../paginas/boleteria.html">Boletería</a>
+                    <a href="../paginas/dulceria.html">Dulcería</a>
+                    <a href="../paginas/socios.html">Socios</a>
+                    <a href="../paginas/noticias.html">Noticias</a>
                 </div>
                 <div class="opciones">
                     <a href="#">
                         <span class="icon_texto">Buscar</span>
                         <span class="material-icons-round">search</span>
                     </a>
-                    <a href="acceder.html">
+                    <a href="../paginas/acceder.html">
                         <span class="icon_texto">Acceder</span>
                         <span class="material-icons-round">account_circle</span>
                     </a>
-                    <a href="ayuda.html">
+                    <a href="../paginas/ayuda.html">
                         <span class="icon_texto">Ayuda</span>
                         <span class="material-icons-round">help</span>
                     </a>
@@ -47,88 +47,108 @@
         <div class="box_1">
             <div class="titulo">
                 <h2>Películas</h2>
-                <div class="filtro">
-                    <span>
-                        <iconify-icon icon="mage:filter" class="icon_filter"></iconify-icon>
-                        Filtrar
-                    </span>
-                    <div class="filtro_categorias">
-                        <select name="genero">
-                            <option value="" disabled selected>Género</option>
-                            <option value="">Acción</option>
-                            <option value="">Anime</option>
-                            <option value="">Comedia</option>
-                            <option value="">Drama</option>
-                            <option value="">Familiar</option>
-                            <option value="">Romance</option>
-                            <option value="">Suspenso</option>
-                            <option value="">Terror</option>
-                            <option value="">Thriller</option>
-                        </select>
-                        <select name="idioma">
-                            <option value="" disabled selected>Idioma</option>
-                            <option value="">Doblada</option>
-                            <option value="">Subtitulada</option>
-                        </select>
-                        <select name="formato">
-                            <option value="" disabled selected>Formato</option>
-                            <option value="">2D</option>
-                            <option value="">3D</option>
-                        </select>
-                        <select name="clasificacion">
-                            <option value="" disabled selected>Clasificación</option>
-                            <option value="">APT</option>
-                            <option value="">+14</option>
-                            <option value="">+18</option>
-                        </select>
-                    </div>
+            </div>
+            <div class="secciones">
+                <h3 id="cartelera"><a href="../paginas/peliculas.html">CARTELERA</a></h3>
+                <h3 class="text_efecto"><a href="../paginas/estrenos.html">PRÓXIMAMENTE</a></h3>
+                <h3 class="text_efecto"><a href="">PREVENTA</a></h3>
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="filtro">
+                <span>
+                    <iconify-icon icon="mage:filter" class="icon_filter"></iconify-icon>
+                    Filtrar
+                </span>
+                <div class="filtro_categorias">
+                    <!-- FILTRO DE GÉNERO GENERADO CON JAVASCRIPT -->
+                    <select id="filtroGenero">
+                    </select>
+                    <select id="filtroIdioma">
+                    </select>
+                    <select id="filtroFormato">
+                    </select>
+                    <select id="filtroClasificacion">
+                    </select>
+                    <!-- FILTRO DE GÉNERO ESTÁTICO -->
+                    <!--
+                    <select name="genero">
+                        <option value="" disabled selected>Género</option>
+                        <option value="">Acción</option>
+                        <option value="">Anime</option>
+                        <option value="">Comedia</option>
+                        <option value="">Drama</option>
+                        <option value="">Familiar</option>
+                        <option value="">Romance</option>
+                        <option value="">Suspenso</option>
+                        <option value="">Terror</option>
+                        <option value="">Thriller</option>
+                    </select>
+                    <select name="idioma">
+                        <option value="" disabled selected>Idioma</option>
+                        <option value="">Doblada</option>
+                        <option value="">Subtitulada</option>
+                    </select>
+                    <select name="formato">
+                        <option value="" disabled selected>Formato</option>
+                        <option value="">2D</option>
+                        <option value="">3D</option>
+                    </select>
+                    <select name="clasificacion">
+                        <option value="" disabled selected>Clasificación</option>
+                        <option value="">APT</option>
+                        <option value="">+14</option>
+                        <option value="">+18</option>
+                    </select>
+                    -->
+                </div>
+                <div class="filtros_seleccionados">
+                    <div class="listaFiltros" id="listaFiltros"></div>
+                    <button class="filtro-boton"id="btnLimpiarFiltros">Limpiar filtros</button>
                 </div>
             </div>
-            <div>
-                <div class="secciones">
-                    <h3 id="cartelera"><a href="peliculas.html">CARTELERA</a></h3>
-                    <h3 class="text_efecto"><a href="estrenos.html">PRÓXIMAMENTE</a></h3>
-                    <h3 class="text_efecto"><a href="">PREVENTA</a></h3>
+            <div class="cont_cartelera" id="cont_cartelera">
+                <!-- CONTENIDO GENERADO CON JAVASCRIPT -->
+                <!--
+                <div class="cont_pelicula">
+                    <img src="../imagenes/pelicula_4.jpeg">
+                    <h4>Cuadrilátero</h4>
+                    <span>1h 25m | +14</span>
+                    <button>Ver Horarios</button>
                 </div>
-                <div class="cont_cartelera">
-                    <div class="cont_pelicula">
-                        <img src="../imagenes/pelicula_4.jpeg">
-                        <h4>Cuadrilátero</h4>
-                        <span>1h 25m | +14</span>
-                        <button>Ver Horarios</button>
-                    </div>
-                    <div class="cont_pelicula">
-                        <img src="../imagenes/pelicula_2.jpeg">
-                        <h4>Destino final: Lazos de sangre</h4>
-                        <span>1h 49m | +14</span>
-                        <button>Ver Horarios</button>
-                    </div>
-                    <div class="cont_pelicula">
-                        <img src="../imagenes/pelicula_6.png">
-                        <h4>DAN DA DAN: Evil Eye</h4>
-                        <span>1h 33m | +14</span>
-                        <button>Ver Horarios</button>
-                    </div>
-                    <div class="cont_pelicula">
-                        <img src="../imagenes/pelicula_1.jpeg">
-                        <h4>Bailarina</h4>
-                        <span>2h 5m | +14</span>
-                        <button>Ver Horarios</button>
-                    </div>
-                    <div class="cont_pelicula">
-                        <img src="../imagenes/pelicula_3.jpeg">
-                        <h4>Lilo y Stitch</h4>
-                        <span>1h 40m | +14</span>
-                        <button>Ver Horarios</button>
-                    </div>
-                    <div class="cont_pelicula">
-                        <img src="../imagenes/pelicula_1.jpeg">
-                        <h4>Cuadrilátero</h4>
-                        <span>1h 25m | +14</span>
-                        <button>Ver Horarios</button>
-                    </div>
+                <div class="cont_pelicula">
+                    <img src="../imagenes/pelicula_2.jpeg">
+                    <h4>Destino final: Lazos de sangre</h4>
+                    <span>1h 49m | +14</span>
+                    <button>Ver Horarios</button>
                 </div>
+                <div class="cont_pelicula">
+                    <img src="../imagenes/pelicula_6.png">
+                    <h4>DAN DA DAN: Evil Eye</h4>
+                    <span>1h 33m | +14</span>
+                    <button>Ver Horarios</button>
+                </div>
+                <div class="cont_pelicula">
+                    <img src="../imagenes/pelicula_1.jpeg">
+                    <h4>Bailarina</h4>
+                    <span>2h 5m | +14</span>
+                    <button>Ver Horarios</button>
+                </div>
+                <div class="cont_pelicula">
+                    <img src="../imagenes/pelicula_3.jpeg">
+                    <h4>Lilo y Stitch</h4>
+                    <span>1h 40m | +14</span>
+                    <button>Ver Horarios</button>
+                </div>
+                <div class="cont_pelicula">
+                    <img src="../imagenes/pelicula_1.jpeg">
+                    <h4>Cuadrilátero</h4>
+                    <span>1h 25m | +14</span>
+                    <button>Ver Horarios</button>
+                </div>
+                -->
             </div>
+        </div>
         </div>
     </main>
     <footer>
@@ -160,6 +180,9 @@
             </div>
         </div>
     </footer>
+    <script src="../js/dataPelis.js"></script>
+    <script src="../js/peliculas.js"></script>
+    <script src="../js/consultarAPI.js"></script>
 </body>
 
 </html>
