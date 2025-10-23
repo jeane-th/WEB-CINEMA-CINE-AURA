@@ -18,13 +18,13 @@
                 <h2>Películas</h2>
             </div>
             <div class="secciones">
-                <h3 class="text_efecto"><a href="./peliculas.html">CARTELERA</a></h3>
-                <h3 id="cartelera"><a href="./estrenos.html">PRÓXIMAMENTE</a></h3>
+                <h3 id="cartelera"><a href="../paginas/peliculas.html">CARTELERA</a></h3>
+                <h3 id="proximamente" class="text_efecto"><a href="../paginas/estrenos.html">PRÓXIMAMENTE</a></h3>
                 <h3 class="text_efecto"><a href="">PREVENTA</a></h3>
             </div>
         </div>
-        <div class="videos">
-            <div class="video_cont">
+        <div class="videos" id="cont_estrenos">
+            <!-- <div class="video_cont">
                 <video width="500" controls poster="../imagenes/img_trailer_1.jpg">
                     <source src="../videos/trailer_1.mp4" type="video/mp4">
                 </video>
@@ -37,7 +37,8 @@
                     <p>Un niño vikingo llamado Hipo desafía la tradición al hacerse amigo de un dragón llamado Chimuelo.
                     </p>
                 </div>
-            </div>
+            </div> -->
+            <!--
             <div class="video_cont_2">
                 <video width="500" controls poster="../imagenes/img_trailer_2.jpg">
                     <source src="../videos/trailer_2.mp4" type="video/mp4">
@@ -52,50 +53,9 @@
                         de los eventos de la primera película.</p>
                 </div>
             </div>
-            <div class="video_cont">
-                <video width="500" controls poster="../imagenes/img_trailer_3.jpg">
-                    <source src="../videos/trailer_3.mp4" type="video/mp4">
-                </video>
-                <div class="video_info">
-                    <span class="span_cont">
-                        <span class="span_text">Estreno</span>
-                        <iconify-icon icon="mdi:calendar" class="icon_calendar"></iconify-icon>
-                    </span>
-                    <h3>Pitufos</h3>
-                    <p>Cuando Papá Pitufo es secuestrado de forma misteriosa por Gargamel, Pitufina lidera a los Pitufos
-                        en una misión al mundo real para salvarlo.</p>
-                </div>
-            </div>
-            <div class="video_cont_2">
-                <video width="500" controls poster="../imagenes/img_trailer_4.jpg">
-                    <source src="../videos/trailer_4.mp4" type="video/mp4">
-                </video>
-                <div class="video_info">
-                    <span class="span_cont">
-                        <span class="span_text">Estreno</span>
-                        <iconify-icon icon="mdi:calendar" class="icon_calendar"></iconify-icon>
-                    </span>
-                    <h3>Animales Peligrosos</h3>
-                    <p>Una surfista que es secuestrada por un asesino en serie debe escapar antes de que él la use como
-                        ofrenda en un ritual para alimentar a tiburones.</p>
-                </div>
-            </div>
-            <div class="video_cont">
-                <video width="500" controls poster="../imagenes/img_trailer_5.jpg">
-                    <source src="../videos/trailer_5.mp4" type="video/mp4">
-                </video>
-                <div class="video_info">
-                    <span class="span_cont">
-                        <span class="span_text">Estreno</span>
-                        <iconify-icon icon="mdi:calendar" class="icon_calendar"></iconify-icon>
-                    </span>
-                    <h3>Demon Slayer: Castillo infinito</h3>
-                    <p>La historia sigue a Tanjiro Kamado, un joven cazador de demonios que busca vengar la muerte de su
-                        familia y salvar a su hermana Nezuko.</p>
-                </div>
-            </div>
+        -->
         </div>
-        </div>
+
     </main>
     <footer>
         <div class="footer">
@@ -127,6 +87,8 @@
         </div>
     </footer>
     <script src="../componentes/header.js"></script>
+    <script src="../js/dataPelis.js"></script>
+    <script src="../js/estrenos.js"></script>
 </body>
 
 </html>

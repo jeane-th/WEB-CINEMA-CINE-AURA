@@ -23,7 +23,6 @@ main {
     align-items: flex-start;
     justify-content: space-between;
     margin: 30px 0 0px 0;
-
 }
 .titulo{
     flex-basis: 30%
@@ -151,9 +150,8 @@ option {
     gap: 3.5rem;
     margin-top: 40px;
     border-left: 1px solid white;
-    justify-content: flex-end;
-
-}
+    padding-left: 40px;
+    }
 
 .cont_cartelera h4 {
     font-size: 1.4rem;

@@ -7,103 +7,9 @@
     box-sizing: border-box;
 }
 
-iconify-icon {
-    color: white;
-    font-size: 35px;
-}
-
 body {
     font-family: 'Lexend Deca', sans-serif;
     background-color: #121212;
-}
-
-nav {
-    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0.05));
-    border-bottom: solid 1px rgb(255, 255, 255, 0.4);
-    backdrop-filter: blur(25px);
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-.contenedor {
-    max-width: 1080px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a {
-    font-family: 'Lexend Giga', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    letter-spacing: -0.05em;
-    color: white;
-}
-
-.logo span {
-    color: #ed0133;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.menu a {
-    font-size: 16px;
-    font-weight: 300;
-    color: rgb(255, 255, 255, 0.8);
-    text-shadow: 0 2px 4px #121212;
-    padding: 3px 7px;
-    border-radius: 18px;
-    border: 2px solid transparent;
-}
-
-.menu #peliculas {
-    color: white;
-    background-color: #ed0133;
-    
-}
-
-.menu a:hover {
-    border: 2px solid white;
-    color: white;
-}
-
-.opciones {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.opciones a {
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-.icon_texto {
-    opacity: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    transition: opacity 0.3s ease, width 0.3s ease, margin-right 0.3s ease;
-}
-
-.opciones a:hover .icon_texto {
-    opacity: 1;
-    width: auto;
-    margin-right: 6px;
-}
-
-.material-icons-round {
-    font-size: 28px;
-    color: white;
 }
 
 main {
@@ -113,7 +19,12 @@ main {
 .box_1 {
     display: flex;
     align-items: flex-start;
-    margin: 30px 0 80px 0;
+    justify-content: space-between;
+    margin: 30px 0 0px 0;
+}
+
+.titulo {
+    flex-basis: 30%
 }
 
 .titulo h2 {
@@ -133,10 +44,12 @@ main {
 .secciones {
     display: flex;
     gap: 2.5rem;
+    color: white;
     font-size: 1.4rem;
     height: 80px;
     align-items: center;
     padding-left: 70px;
+    flex: 1;
 }
 
 .secciones a {
@@ -144,7 +57,7 @@ main {
     color: white;
 }
 
-#cartelera {
+#proximamente {
     text-decoration: underline;
     text-decoration-color: #ed0133;
     text-decoration-thickness: 5px;
@@ -159,8 +72,17 @@ main {
     transform: scale(1.1);
 }
 
+.videos {
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 124px;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
 .video_cont {
-    max-width: 950px;
+    max-width: 90%;
     display: flex;
     margin: auto;
     gap: 60px;
@@ -169,21 +91,23 @@ main {
 }
 
 .video_cont_2 {
-    max-width: 950px;
+    max-width: 90%;
     display: flex;
     flex-direction: row-reverse;
     margin: auto;
-    margin-bottom: 100px;
     gap: 60px;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 video {
-    transition: box-shadow 0.5s ease;;
+    transition: box-shadow 0.5s ease;
+    ;
 }
 
 video:hover {
-    box-shadow: 0 0 100px rgba(237, 1, 51, 0.5) ;;
+    box-shadow: 0 0 100px rgba(237, 1, 51, 0.5);
+    ;
 }
 
 .video_info {
@@ -297,7 +221,7 @@ footer {
 }
 
 hr {
-    border: 1px solid white; 
+    border: 1px solid white;
 }
 
 .footer_text {

@@ -25,8 +25,7 @@ function renderizarPeliculas(peliculas) {
       <h4>${peli.titulo}</h4>
       <span>${Math.floor(peli.duracion / 60)}h ${peli.duracion % 60}m | ${peli.clasificacion}</span>
       <p>${peli.genero}</p>
-      <button>Ver Horarios</button>
-      <button data-id="${peli.id}">Ver detalles</button>
+      <button data-id="${peli.id}">Ver Horarios</button>
     `;
     contCartelera.appendChild(div);
   });
@@ -171,3 +170,5 @@ llenarSelectFormatos();
 llenarSelectClasificaciones();
 renderizarPeliculas(dataPelis);
 actualizarFiltrosActivos();
+
+

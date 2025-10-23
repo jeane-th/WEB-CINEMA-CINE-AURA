@@ -13,156 +13,156 @@
 </head>
 
 <body>
-       <div id="header"></div>
-        <!-- FIN MENÚ DE NAVEGACIÓN -->
-        <main>
-            <section class="bloque">
-                <h2>Canchita</h2>
-                <div class="seleccionar">
-                    <div class="campo">
-                        <label>Tamaño:</label>
-                        <select name="tamano">
-                            <option>Mediana</option>
-                            <option>Grande</option>
-                            <option>Gigante</option>
-                        </select>
+    <div id="header"></div>
+    <!-- FIN MENÚ DE NAVEGACIÓN -->
+    <main>
+        <section class="bloque">
+            <h2>Canchita</h2>
+            <div class="seleccionar">
+                <div class="campo">
+                    <label>Tamaño:</label>
+                    <select name="tamano">
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                        <option>Gigante</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Sabor:</label>
+                    <select name="sabor">
+                        <option>Salado</option>
+                        <option>Dulce</option>
+                        <option>Mixto (solo gigante)</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Extras:</label>
+                    <li><input type="checkbox" name="extra" value="mantequilla"> Mantequilla</li>
+                    <li><input type="checkbox" name="extra" value="caramelo"> Caramelo</li>
+                    <li><input type="checkbox" name="extra" value="chocolate"> Chocolate</li>
+                </div>
+                <div class="campo">
+                    <label>Recargable:</label>
+                    <li><input type="radio" name="recarga" value="si"> Sí </li>
+                    <li><input type="radio" name="recarga" value="no"> No </li>
+                </div>
+                <div class="campo cantidad">
+                    <label>Cantidad:</label>
+                    <div class="button">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
                     </div>
-                    <div class="campo">
-                        <label>Sabor:</label>
-                        <select name="sabor">
-                            <option>Salado</option>
-                            <option>Dulce</option>
-                            <option>Mixto (solo gigante)</option>
-                        </select>
+                </div>
+            </div>
+            <div class="precio">
+                Precio: <span>S/. 0.00</span>
+            </div>
+        </section>
+        <section class="bloque">
+            <h2>Bebida</h2>
+            <div class="seleccionar">
+                <div class="campo">
+                    <label>Tamaño:</label>
+                    <select>
+                        <option>21 oz</option>
+                        <option>32 oz</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Tipo:</label>
+                    <select>
+                        <option>Inca Kola</option>
+                        <option>Inca Kola 0</option>
+                        <option>Coca-Cola</option>
+                        <option>Coca-Cola 0</option>
+                        <option>Pepsi</option>
+                        <option>Pepsi 0</option>
+                        <option>Agua</option>
+                        <option>Café caliente</option>
+                        <option>Frozen cine</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Cantidad de hielo:</label>
+                    <input type="range" min="0" max="100">
+                </div>
+                <div class="campo cantidad">
+                    <label>Cantidad:</label>
+                    <div class="button">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
                     </div>
-                    <div class="campo">
-                        <label>Extras:</label>
-                        <li><input type="checkbox" name="extra" value="mantequilla"> Mantequilla</li>
-                        <li><input type="checkbox" name="extra" value="caramelo"> Caramelo</li>
-                        <li><input type="checkbox" name="extra" value="chocolate"> Chocolate</li>
+                </div>
+            </div>
+            <div class="precio">
+                Precio: <span>S/. 0.00</span>
+            </div>
+        </section>
+        <section class="bloque">
+            <h2>Snack</h2>
+            <div class="seleccionar">
+                <div class="campo">
+                    <label>Selecciona tus snacks:</label>
+                    <li><input type="checkbox" name="snack" value="tablet"> Tablet de chocolate<br></li>
+                    <li><input type="checkbox" name="snack" value="tablet"> Tablet de chocolate<br></li>
+                    <li><input type="checkbox" name="snack" value="gomitas"> Gomitas estelares<br></li>
+                    <li><input type="checkbox" name="snack" value="cookies"> Mini cookies<br></li>
+                    <li><input type="checkbox" name="snack" value="chips"> Choco chips<br></li>
+                    <li><input type="checkbox" name="snack" value="paleta"> Paleta fantasía<br></li>
+                    <li><input type="checkbox" name="snack" value="salado"> Snacks salados<br></li>
+                </div>
+                <div class="campo">
+                    <label>Recargable:</label>
+                    <li><input type="radio" name="recarga" value="si"> Sí </li>
+                    <li><input type="radio" name="recarga" value="no"> No </li>
+                </div>
+                <div class="campo cantidad">
+                    <label>Cantidad:</label>
+                    <div class="button">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
                     </div>
-                    <div class="campo">
-                        <label>Recargable:</label>
-                        <li><input type="radio" name="recarga" value="si"> Sí </li>
-                        <li><input type="radio" name="recarga" value="no"> No </li>
+                </div>
+            </div>
+            <div class="precio">
+                Precio: <span>S/. 0.00</span>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="footer_content">
+                    <h4>Cine<span>Aura</span></h4>
+                    <div class="footer_contact">
+                        <p><span>Teléfono:</span> (01) 123-4567</p>
+                        <p><span>Correo:</span> contacto@cineaura.com</p>
+                        <p><span>Horario:</span> Lun - Dom</p>
                     </div>
-                    <div class="campo cantidad">
-                        <label>Cantidad:</label>
-                        <div class="button">
-                            <button>-</button>
-                            <input type="number" value="1" min="1">
-                            <button>+</button>
+                    <div class="footer_links">
+                        <a href="#">Términos y condiciones</a>
+                        <a href="#">Política de privacidad</a>
+                        <a href="#">Política de cookies</a>
+                    </div>
+                    <div class="footer_social">
+                        <p>Síguenos en:</p>
+                        <div class="social_icons">
+                            <a href="#"><img src="../imagenes/facebook.png"></a>
+                            <a href="#"><img src="../imagenes/instagram.png"></a>
+                            <a href="#"><img src="../imagenes/tiktok.png"></a>
                         </div>
                     </div>
                 </div>
-                <div class="precio">
-                    Precio: <span>S/. 0.00</span>
-                </div>
-            </section>
-            <section class="bloque">
-                <h2>Bebida</h2>
-                <div class="seleccionar">
-                    <div class="campo">
-                        <label>Tamaño:</label>
-                        <select>
-                            <option>21 oz</option>
-                            <option>32 oz</option>
-                        </select>
-                    </div>
-                    <div class="campo">
-                        <label>Tipo:</label>
-                        <select>
-                            <option>Inca Kola</option>
-                            <option>Inca Kola 0</option>
-                            <option>Coca-Cola</option>
-                            <option>Coca-Cola 0</option>
-                            <option>Pepsi</option>
-                            <option>Pepsi 0</option>
-                            <option>Agua</option>
-                            <option>Café caliente</option>
-                            <option>Frozen cine</option>
-                        </select>
-                    </div>
-                    <div class="campo">
-                        <label>Cantidad de hielo:</label>
-                        <input type="range" min="0" max="100">
-                    </div>
-                    <div class="campo cantidad">
-                        <label>Cantidad:</label>
-                        <div class="button">
-                            <button>-</button>
-                            <input type="number" value="1" min="1">
-                            <button>+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="precio">
-                    Precio: <span>S/. 0.00</span>
-                </div>
-            </section>
-            <section class="bloque">
-                <h2>Snack</h2>
-                <div class="seleccionar">
-                    <div class="campo">
-                        <label>Selecciona tus snacks:</label>
-                        <li><input type="checkbox" name="snack" value="tablet"> Tablet de chocolate<br></li>
-                        <li><input type="checkbox" name="snack" value="tablet"> Tablet de chocolate<br></li>
-                        <li><input type="checkbox" name="snack" value="gomitas"> Gomitas estelares<br></li>
-                        <li><input type="checkbox" name="snack" value="cookies"> Mini cookies<br></li>
-                        <li><input type="checkbox" name="snack" value="chips"> Choco chips<br></li>
-                        <li><input type="checkbox" name="snack" value="paleta"> Paleta fantasía<br></li>
-                        <li><input type="checkbox" name="snack" value="salado"> Snacks salados<br></li>
-                    </div>
-                    <div class="campo">
-                        <label>Recargable:</label>
-                        <li><input type="radio" name="recarga" value="si"> Sí </li>
-                        <li><input type="radio" name="recarga" value="no"> No </li>
-                    </div>
-                    <div class="campo cantidad">
-                        <label>Cantidad:</label>
-                        <div class="button">
-                            <button>-</button>
-                            <input type="number" value="1" min="1">
-                            <button>+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="precio">
-                    Precio: <span>S/. 0.00</span>
-                </div>
-            </section>
-</body>
-</main>
-<footer>
-    <div class="footer">
-        <div class="footer_content">
-            <h4>Cine<span>Aura</span></h4>
-            <div class="footer_contact">
-                <p><span>Teléfono:</span> (01) 123-4567</p>
-                <p><span>Correo:</span> contacto@cineaura.com</p>
-                <p><span>Horario:</span> Lun - Dom</p>
-            </div>
-            <div class="footer_links">
-                <a href="#">Términos y condiciones</a>
-                <a href="#">Política de privacidad</a>
-                <a href="#">Política de cookies</a>
-            </div>
-            <div class="footer_social">
-                <p>Síguenos en:</p>
-                <div class="social_icons">
-                    <a href="#"><img src="../imagenes/facebook.png"></a>
-                    <a href="#"><img src="../imagenes/instagram.png"></a>
-                    <a href="#"><img src="../imagenes/tiktok.png"></a>
+                <hr>
+                <div class="footer_text">
+                    <p>&copy; 2025 CineAura. Todos los derechos reservados.</p>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="footer_text">
-            <p>&copy; 2025 CineAura. Todos los derechos reservados.</p>
-        </div>
-    </div>
-</footer>
-<script src="../componentes/header.js"></script>
+        </footer>
+        <script src="../componentes/header.js"></script>
+        <script src="../js/dataPelis.js"></script>
+    </main>
 </body>
 
 </html>
