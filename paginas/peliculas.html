@@ -11,38 +11,7 @@
 </head>
 
 <body>
-    <header>
-        <!-- MENÚ DE NAVEGACIÓN -->
-        <nav>
-            <div class="contenedor">
-                <div class="logo">
-                    <a href="../index.html">Cine<span>Aura</span></a>
-                </div>
-                <div class="menu">
-                    <a id="peliculas" href="../paginas/peliculas.html">Películas</a>
-                    <a href="../paginas/boleteria.html">Boletería</a>
-                    <a href="../paginas/dulceria.html">Dulcería</a>
-                    <a href="../paginas/socios.html">Socios</a>
-                    <a href="../paginas/noticias.html">Noticias</a>
-                </div>
-                <div class="opciones">
-                    <a href="#">
-                        <span class="icon_texto">Buscar</span>
-                        <span class="material-icons-round">search</span>
-                    </a>
-                    <a href="../paginas/acceder.html">
-                        <span class="icon_texto">Acceder</span>
-                        <span class="material-icons-round">account_circle</span>
-                    </a>
-                    <a href="../paginas/ayuda.html">
-                        <span class="icon_texto">Ayuda</span>
-                        <span class="material-icons-round">help</span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <!-- FIN MENÚ DE NAVEGACIÓN -->
-    </header>
+    <div id="header"></div>
     <main>
         <div class="box_1">
             <div class="titulo">
@@ -104,7 +73,7 @@
                 </div>
                 <div class="filtros_seleccionados">
                     <div class="listaFiltros" id="listaFiltros"></div>
-                    <button class="filtro-boton"id="btnLimpiarFiltros">Limpiar filtros</button>
+                    <button class="filtro-boton" id="btnLimpiarFiltros">Limpiar filtros</button>
                 </div>
             </div>
             <div class="cont_cartelera" id="cont_cartelera">
@@ -183,6 +152,7 @@
     <script src="../js/dataPelis.js"></script>
     <script src="../js/peliculas.js"></script>
     <script src="../js/consultarAPI.js"></script>
+    <script src="../componentes/header.js"></script>
 </body>
 
 </html>
