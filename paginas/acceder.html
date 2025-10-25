@@ -2,91 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-    <link rel="stylesheet" href="../css/acceder.css">
-    <title>
-        CineAura | Acceder
-    </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="../css/acceder.css">
+  <title>CineAura | Acceder</title>
 </head>
 
 <body>
-    <div id="header"></div>
-    <main>
-        <div class="container">
-            <div class="brand-title">
-                INICIAR DE SESION
-            </div>
-            <p>
-                Compra más fácil, disfruta más. Inicia sesión y accede a beneficios especiales, puntos y promociones.⭐🍿
-            </p>
-            <div class="inputs">
-                <label>N° de Socio</label>
-                <input type="email" placeholder="ejemplo@gmail.com">
-                <p>
-                    DNI,RUT,CE o Pasaporte.
-                </p>
-                <label>Contraseña</label>
-                <input type="password" placeholder="minímo 6 caracteres">
-                <p>
-                    ¿Olvidaste tu contraseña?
-                </p>
-                <button type="submit">
-                    INGRESAR
-                </button>
-            </div>
-    </main>
-    <div class="mensaje">
-        <h2>¿Aún no eres socio?</h2>
-        <p>
-            Disfruta beneficios exclusivos 🎁 y vive la experiencia del cine como nunca antes.
-            <br>
-            Registrate en nuestro programa Socio Cineaura y empieza a acumular puntos ⭐ en cada compra.
-        </p>
-        <a href="socios.html">conoce más..</a>
+  <div id="header"></div>
 
-    </div>
-    <div class="register">
-        <button type="submit" id="registrar">
-            <a href="">
-                <span class="material-icons-round">account_circle</span>
-            </a>
-            <a href="registrarse.html">Registrarse</a>
-        </button>
-    </div>
-    <br>
-    <footer>
-        <div class="footer">
-            <div class="footer_content">
-                <h4>Cine<span>Aura</span></h4>
-                <div class="footer_contact">
-                    <p><span>Teléfono:</span> (01) 123-4567</p>
-                    <p><span>Correo:</span> contacto@cineaura.com</p>
-                    <p><span>Horario:</span> Lun - Dom</p>
-                </div>
-                <div class="footer_links">
-                    <a href="#">Términos y condiciones</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Política de cookies</a>
-                </div>
-                <div class="footer_social">
-                    <p>Síguenos en:</p>
-                    <div class="social_icons">
-                        <a href="#"><img src="../imagenes/facebook.png"></a>
-                        <a href="#"><img src="../imagenes/instagram.png"></a>
-                        <a href="#"><img src="../imagenes/tiktok.png"></a>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="footer_text">
-                <p>&copy; 2025 CineAura. Todos los derechos reservados.</p>
-            </div>
+  <main>
+    <div class="container">
+      <div class="login-title">Iniciar Sesión</div>
+
+      <p class="login-description">
+        Compra más fácil, disfruta más. Inicia sesión y accede a beneficios especiales, puntos y promociones. ⭐🍿
+      </p>
+
+      <!-- Formulario único -->
+      <form id="loginForm" class="loginForm">
+        <div class="input-conteiner">
+          <label class="label-input" for="usuario">Usuario</label>
+          <input class="input-loginForm" type="text" id="usuario" placeholder="Ingresa tu usuario" required>
+          <!-- Cambie formulario de correo a usuario -->
+          <!-- <p class="input-description">DNI, RUT, CE o Pasaporte.</p> -->
+          <!-- <p>Digita tu usuario registrado</p> -->
         </div>
-    </footer>
-    <script src="../componentes/header.js"></script>
-    <script src="../js/dataPelis.js"></script>
+        <div class="input-conteiner">
+          <label class="label-input" for="clave">Contraseña</label>
+          <input class="input-loginForm" type="password" id="clave" placeholder="mínimo 6 caracteres" minlength="6"
+            required>
+          <p><a class="login-enlaces" href="">¿Olvidaste tu contraseña?</a></p>
+        </div>
+
+        <button class="button-login" type="submit">Ingresar</button>
+      </form>
+    </div>
+
+    <div class="mensaje">
+      <h2 class="mensaje-title">¿Aún no eres socio?</h2>
+      <p class="mensaje-description">
+        Disfruta beneficios exclusivos 🎁 y vive la experiencia del cine como nunca antes.<br>
+        Regístrate en nuestro programa Socio Cineaura y empieza a acumular puntos ⭐ en cada compra.
+      </p>
+      <a class="login-enlaces mensaje-enlace" href="socios.html">Conoce más > </a>
+    </div>
+
+    <div class="button-registrarse">
+      <a href="registrarse.html" class="btn-registrar">
+        <span class="material-icons-round">account_circle</span> Registrarse
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer_content">
+        <h4>Cine<span>Aura</span></h4>
+        <div class="footer_contact">
+          <p><span>Teléfono:</span> (01) 123-4567</p>
+          <p><span>Correo:</span> contacto@cineaura.com</p>
+          <p><span>Horario:</span> Lun - Dom</p>
+        </div>
+
+        <div class="footer_links">
+          <a href="#">Términos y condiciones</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Política de cookies</a>
+        </div>
+
+        <div class="footer_social">
+          <p>Síguenos en:</p>
+          <div class="social_icons">
+            <a href="#"><img src="../imagenes/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../imagenes/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../imagenes/tiktok.png" alt="TikTok"></a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="footer_text">
+        <p>&copy; 2025 CineAura. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/login.js"></script>
+  <script src="../componentes/header.js"></script>
+  <script src="../js/dataPelis.js"></script>
+
 </body>
 
 </html>
