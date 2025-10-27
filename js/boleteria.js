@@ -1,3 +1,33 @@
+// Recibe el id desde la pagina peliculas 
+const params = new URLSearchParams(window.location.search);
+const idPeli =  Number(params.get("id"));
+
+console.log("ID recibido:", idPeli);
+
+const posicion = dataPelis.findIndex(peli => peli.id === idPeli); 
+const pelicula = dataPelis[posicion]
+console.log(pelicula);
+
+// Renderizar pelicula elegida 
+const divDetallePelicula = document.getElementById("box_pelicula");
+    divDetallePelicula.innerHTML = `
+        <img src="${pelicula.poster}" class="img_pelicula"> 
+        <div class="box_2_texto"> 
+            <h4>Director:</h4> 
+            <p>Dean Fleisch Camp</p> 
+            <h4>Reparto:</h4> 
+            <p>Sydney Agudong, Maia Kealoha, Chris Sanders</p> 
+        </div>
+    `;
+const div = document.getElementById("box_pelicula_detalle");
+    div.innerHTML = `
+        <h3>${pelicula.titulo}</h3>
+        <p class="box_detalle_text">
+            <iconify-icon icon="ic:outline-watch-later" class="icon_watch"></iconify-icon>
+            ${pelicula.duracion} min - ${pelicula.clasificacion}
+        </p>
+    `;
+
 document.addEventListener('DOMContentLoaded', () => {
     const butacas = document.querySelectorAll('.butaca')
     const butacasSeleccionadas = document.getElementById('butacas_seleccionadas')

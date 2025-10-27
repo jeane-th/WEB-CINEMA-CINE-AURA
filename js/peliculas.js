@@ -25,18 +25,19 @@ function renderizarPeliculas(peliculas) {
       <h4>${peli.titulo}</h4>
       <span>${Math.floor(peli.duracion / 60)}h ${peli.duracion % 60}m | ${peli.clasificacion}</span>
       <p>${peli.genero}</p>
-      <button data-id="${peli.id}">Ver Horarios</button>
+      <button class="btn-ver" data-id="${peli.id}">Ver Horarios</button>
     `;
+    const btn = div.querySelector(".btn-ver");
+    btn.addEventListener("click", () => peliInfo(peli.id)); 
+
     contCartelera.appendChild(div);
   });
 }
 
-document.addEventListener("click", (e) => {
-  if (e.target.tagName === "BUTTON") {
-    const id = e.target.dataset.id;
-    console.log(id)
-  }
-});
+function peliInfo(id) {
+  console.log("ID:", id);
+  window.location.href = `../paginas/boleteria.html?id=${id}`;
+}
 
 // 🔹 Aplica todos los filtros
 function aplicarFiltros() {

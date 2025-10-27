@@ -142,7 +142,9 @@ main {
     gap: 20px;
     color: white;
 }
-
+.box_detale-info{
+    width: 600px;
+}
 .box_detalle {
     display: flex;
     flex-direction: column;
