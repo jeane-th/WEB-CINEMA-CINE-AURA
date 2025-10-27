@@ -129,7 +129,7 @@ option {
     color: white;
 }
 
-#cartelera {
+.subrayado {
     text-decoration: underline;
     text-decoration-color: #ed0133;
     text-decoration-thickness: 5px;
