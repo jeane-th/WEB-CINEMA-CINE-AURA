@@ -1,16 +1,16 @@
 // Recibe el id desde la pagina peliculas 
 const params = new URLSearchParams(window.location.search);
-const idPeli =  Number(params.get("id"));
+const idPeli = Number(params.get("id"));
 
 console.log("ID recibido:", idPeli);
 
-const posicion = dataPelis.findIndex(peli => peli.id === idPeli); 
+const posicion = dataPelis.findIndex(peli => peli.id === idPeli);
 const pelicula = dataPelis[posicion]
 console.log(pelicula);
 
 // Renderizar pelicula elegida 
 const divDetallePelicula = document.getElementById("box_pelicula");
-    divDetallePelicula.innerHTML = `
+divDetallePelicula.innerHTML = `
         <img src="${pelicula.poster}" class="img_pelicula"> 
         <div class="box_2_texto"> 
             <h4>Director:</h4> 
@@ -20,7 +20,7 @@ const divDetallePelicula = document.getElementById("box_pelicula");
         </div>
     `;
 const div = document.getElementById("box_pelicula_detalle");
-    div.innerHTML = `
+div.innerHTML = `
         <h3>${pelicula.titulo}</h3>
         <p class="box_detalle_text">
             <iconify-icon icon="ic:outline-watch-later" class="icon_watch"></iconify-icon>
@@ -28,13 +28,13 @@ const div = document.getElementById("box_pelicula_detalle");
         </p>
     `;
 
+const ocupadas = ['A-3', 'A-4', 'C-1', 'C-2', 'C-3', 'D-8']
+const seleccionadas = []
+
 document.addEventListener('DOMContentLoaded', () => {
     const butacas = document.querySelectorAll('.butaca')
     const butacasSeleccionadas = document.getElementById('butacas_seleccionadas')
     const resumenText = document.getElementById('resumen_text')
-
-    const ocupadas = ['A-3', 'A-4', 'C-1', 'C-2','C-3','D-8']
-    const seleccionadas = []
 
     butacas.forEach(b => {
         const fila = b.dataset.fila
@@ -58,13 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (index !== -1) seleccionadas.splice(index, 1)
             } else {
                 b.classList.add('seleccionada')
-                b.style.backgroundColor= '#ed4d5f'
+                b.style.backgroundColor = '#ed4d5f'
                 seleccionadas.push(id)
             }
             actualizarResumen()
         })
     })
-        
     function actualizarResumen() {
         butacasSeleccionadas.innerHTML = ''
 
@@ -75,9 +74,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
         seleccionadas.forEach(id => {
             const tag = document.createElement('span')
+
             tag.classList.add('butaca_tag')
             tag.textContent = id
             butacasSeleccionadas.appendChild(tag)
         })
     }
 })
+
+
+// continuar continuar
+const btnContinuar = document.getElementById("boton_comprar")
+btnContinuar.addEventListener("click", () =>{
+    let cantidadBoletos=seleccionadas.length;
+     redirectComprar(
+        seleccionadas,
+        pelicula.titulo, 
+        pelicula.poster, 
+        pelicula.formato,
+        cantidadBoletos, 
+        25)
+    } 
+);
+
+function redirectComprar( but, titulo,poster,formato, cantBol, precio) {
+    const datosCompra = { but, titulo,poster,formato, cantBol, precio };
+    // guardar en sessionStorage
+    sessionStorage.setItem("datosCompra", JSON.stringify(datosCompra));
+
+    // redirigir a la página de pago
+    window.location.href = "../paginas/pagos.html";
+}
+
