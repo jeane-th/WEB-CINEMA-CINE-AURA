@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded'), () => {
-    const butacas = document.querySelectorAll('.butaca');
-    const listaSeleccionadas = document.getElementById('lista_seleccionadas')
-    const resuemntText = document.getElementById('resumen_texto')
+document.addEventListener('DOMContentLoaded', () => {
+    const butacas = document.querySelectorAll('.butaca')
+    const butacasSeleccionadas = document.getElementById('butacas_seleccionadas')
+    const resumenText = document.getElementById('resumen_text')
 
-    const ocupadas = ['A-3', 'A-4', 'B-5', 'C-8', 'D-10', 'E-1', 'F-7']
+    const ocupadas = ['A-3', 'A-4', 'C-1', 'C-2','C-3','D-8']
     const seleccionadas = []
 
     butacas.forEach(b => {
@@ -14,14 +14,15 @@ document.addEventListener('DOMContentLoaded'), () => {
         if (ocupadas.includes(id)) {
             b.classList.add('ocupada')
             b.style.backgroundColor = '#444'
-            b.style.cursos = 'not-allowed'
+            b.style.cursor = 'not-allowed'
         }
 
+        //Al hacer click en una butaca
         b.addEventListener('click', () => {
-            if (b.classList.constains('ocupada')) return
+            if (b.classList.contains('ocupada')) return
 
-            if (b.classList.constains('seleccionada')) {
-                b.classList.remove('selecionada')
+            if (b.classList.contains('seleccionada')) {
+                b.classList.remove('seleccionada')
                 b.style.backgroundColor = '#d6d6d6'
                 const index = seleccionadas.indexOf(id)
                 if (index !== -1) seleccionadas.splice(index, 1)
@@ -33,12 +34,12 @@ document.addEventListener('DOMContentLoaded'), () => {
             actualizarResumen()
         })
     })
-
+        
     function actualizarResumen() {
-        listaSeleccionadas.innerHTML = ''
+        butacasSeleccionadas.innerHTML = ''
 
         if (seleccionadas.length === 0) {
-            resuemntText.textContent = 'Butacas seleccionadas:'
+            resumenText.textContent = 'Butacas seleccionadas:'
             return
         }
 
@@ -46,8 +47,7 @@ document.addEventListener('DOMContentLoaded'), () => {
             const tag = document.createElement('span')
             tag.classList.add('butaca_tag')
             tag.textContent = id
-            listaSeleccionadas.appendChild(tag)
+            butacasSeleccionadas.appendChild(tag)
         })
     }
-
-}
+})
