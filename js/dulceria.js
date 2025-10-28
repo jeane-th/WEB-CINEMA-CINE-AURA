@@ -205,41 +205,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+//*************************************************** */
 
+const datos = JSON.parse(sessionStorage.getItem("datosCompra"));
 
+console.log(datos)
 
+// continuar continuar
+const btnContinuar = document.getElementById("boton_comprar")
+btnContinuar.addEventListener("click", () =>{
+     redirectComprar(datos)
+    } 
+);
 
-/*
-// ---------- VERIFICAR CARRITO (al hacer click en el icono superior) ----------
-if (carritoWrap) {
-    const carritoLink = carritoWrap.querySelector('a');
-    if (carritoLink) {
-        carritoLink.addEventListener('click', (e) => {
-            // Verificar "sesión" simulada:
-            const sesion = JSON.parse(localStorage.getItem('usuarioLogeado')) || false;
-            const carrito = JSON.parse(localStorage.getItem('carritoCineAura')) || [];
+function redirectComprar( datos) {
+    const datosCompra = {datos};
+    // guardar en sessionStorage
+    sessionStorage.setItem("datosCompra", JSON.stringify(datosCompra));
 
-            if (!sesion) {
-                // no está logeado -> llevar a acceder
-                e.preventDefault();
-                window.location.href = "../paginas/acceder.html";
-                return;
-            }
-
-            if (carrito.length === 0) {
-                e.preventDefault();
-                alert("Tu carrito está vacío. Agrega productos antes de proceder al pago.");
-                return;
-            }
-
-            // Si está logeado y hay productos, permitir ir a pagos.
-            // Cambia la ruta según tu proyecto si necesitas otra
-            // Nota: Si tu HTML ya tiene href en el <a>, no hace falta cambiarlo.
-            // Aquí redirigimos explícitamente a pagos:
-            // (quita la siguiente línea si prefieres dejar el href del a)
-            // window.location.href = "../paginas/pagos.html";
-        });
-    }
+    // redirigir a la página de pago
+    window.location.href = "../paginas/pagos.html";
 }
 
-*/
