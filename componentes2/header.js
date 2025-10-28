@@ -1,4 +1,4 @@
-fetch("./componentes/header.html")
+fetch("./componentes2/header.html")
   .then(res => res.text())
   .then(data => {
     // Insertar el header
