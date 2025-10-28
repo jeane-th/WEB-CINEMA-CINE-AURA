@@ -90,27 +90,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
+// Crear el objeto vacío
+let datosBoleteria = {};
 
-// continuar continuar
-const btnContinuar = document.getElementById("boton_comprar")
-btnContinuar.addEventListener("click", () =>{
-    let cantidadBoletos=seleccionadas.length;
-     redirectComprar(
-        seleccionadas,
-        pelicula.titulo, 
-        pelicula.poster, 
-        pelicula.formato,
-        cantidadBoletos, 
-        25)
-    } 
-);
+// Botón continuar
+const btnContinuar = document.getElementById("boton_comprar");
+btnContinuar.addEventListener("click", () => {
+  let cantidadBoletos = seleccionadas.length;
 
-function redirectComprar( but, titulo,poster,formato, cantBol, precio) {
-    const datosCompra = { but, titulo,poster,formato, cantBol, precio };
-    // guardar en sessionStorage
-    sessionStorage.setItem("datosCompra", JSON.stringify(datosCompra));
+  // Guardar todos los datos dentro de datosBoleteria
+  datosBoleteria = {
+    but: seleccionadas,
+    titulo: pelicula.titulo,
+    poster: pelicula.poster,
+    formato: pelicula.formato,
+    cantBol: cantidadBoletos,
+    precio: 25
+  };
 
-    // redirigir a la página de pago
-    window.location.href = "../paginas/dulceria.html";
-}
+  // Guardar en sessionStorage
+  sessionStorage.setItem("datosCompra", JSON.stringify(datosBoleteria));
 
+  // Redirigir
+  window.location.href = "../paginas/dulceria.html";
+});

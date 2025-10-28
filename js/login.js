@@ -7,7 +7,21 @@ const usuariosFijos = [
   { nombre: "Nicole", clave: "grupo5" }
 ];
 
-// ==== CAPTURA EL FORMULARIO ====
+// ==== OBTENER DATOS DE COMPRA ====
+const datos = JSON.parse(sessionStorage.getItem("datosCompra"));
+console.log("🧾 Datos obtenidos:", datos);
+
+// ==== CALCULAR TOTAL ====
+let totalBoletos = (datos.precio || 0) * (datos.cantBol || 0);
+let totalDulces = 0;
+
+if (datos.carrito && datos.carrito.length > 0) {
+  totalDulces = datos.carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
+}
+
+const totalAPagar = totalBoletos + totalDulces;
+
+// ==== CAPTURA DEL FORMULARIO ====
 const form = document.getElementById('loginForm');
 
 if (form) {
@@ -17,17 +31,13 @@ if (form) {
     const usuario = document.getElementById('usuario').value.trim();
     const clave = document.getElementById('clave').value.trim();
 
-    // ---- OBTENER USUARIOS REGISTRADOS EN LOCALSTORAGE ----
     const usuariosRegistrados = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    // ---- VALIDACIÓN ----
     let encontrado = null;
 
-    // Si contiene '@' => buscar en usuarios registrados
     if (usuario.includes('@')) {
       encontrado = usuariosRegistrados.find(u => u.email === usuario && u.password === clave);
     } else {
-      // Si no contiene '@' => buscar en usuarios fijos
       encontrado = usuariosFijos.find(u => u.nombre === usuario && u.clave === clave);
     }
 
@@ -39,7 +49,7 @@ if (form) {
   });
 }
 
-// ---- FUNCIÓN PARA MENSAJE DE ERROR ----
+// ==== FUNCIÓN DE MENSAJE DE ERROR ====
 function mostrarMensaje(texto) {
   let msg = document.getElementById("mensajeLogin");
   if (!msg) {
@@ -64,59 +74,31 @@ function mostrarMensaje(texto) {
   setTimeout(() => msg.remove(), 2000);
 }
 
-// ---- FUNCIÓN PARA MOSTRAR LA BIENVENIDA ----
+// ==== FUNCIÓN DE BIENVENIDA ====
 function mostrarPantallaBienvenida(nombre) {
-
-  const mensaje = document.querySelector(".mensaje") || document.body;
-
-  // Limpiar contenido actual
-  mensaje.innerHTML = "";
-
   const container = document.querySelector(".container") || document.body;
-
-  // Limpiar contenido actual
-  container.innerHTML = "";
-
   container.innerHTML = `
-      <div class="login-title">Bienvenido</div>
-            <p class="login-description">
-     
-      </p>
-      <div class="login-title"> 🎉 ${nombre} 🎉</div>
-      <p class="login-description">
-        Gracias por elegirnos⭐🍿
-      </p>
-      <p class="login-description">
-      </p>
-      <p class="login-description">
-      Total a pagar: S/ ${datos.precio * datos.cantBol}
-      </p>
-      <!-- Formulario único -->
-      <form id="loginForm" class="loginForm">
-        <button id="butonLogin" class="button-login" type="submit">Pagar</button>
-      </form>
+    <div class="login-title">🎉 Bienvenido ${nombre} 🎉</div>
+    <p class="login-description">Gracias por elegirnos⭐🍿</p>
+    <p class="login-description"><strong>Total a pagar: S/. ${totalAPagar.toFixed(2)}</strong></p>
+    <form id="formPagar" class="loginForm">
+      <button id="butonLogin" class="button-login" type="submit">Pagar ahora</button>
+    </form>
   `;
-  // Botón Pagar
+
   const boton = document.getElementById("butonLogin");
-
-  boton.addEventListener("click", () => {
-      redirectComprar(datos)
+  boton.addEventListener("click", (e) => {
+    e.preventDefault();
+    redirectComprar();
   });
-
-  // Agregar al DOM
-  container.appendChild(boton);
 }
 
-const datos = JSON.parse(sessionStorage.getItem("datosCompra")).datos;
-console.log(datos)
+// ==== FUNCIÓN PARA PASAR DATOS A LA SIGUIENTE PÁGINA ====
+function redirectComprar() {
+  // Puedes guardar el mismo objeto, agregando el total
+  const datosConTotal = { ...datos, total: totalAPagar };
+  sessionStorage.setItem("datosCompra", JSON.stringify(datosConTotal));
 
-
-function redirectComprar( datos) {
-    const datosCompra = {datos};
-    // guardar en sessionStorage
-    sessionStorage.setItem("datosCompra", JSON.stringify(datosCompra));
-
-    // redirigir a la página de pago
-    window.location.href = "../paginas/pagoTarjeta.html";
+  // Redirigir a pago con tarjeta
+  window.location.href = "../paginas/pagoTarjeta.html";
 }
-

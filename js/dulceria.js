@@ -87,13 +87,13 @@ function transformarEnContador(boton, producto, cantidadInicial = 1) {
         if (accion === "disminuir") cantidad--;
 
         if (cantidad <= 0) {
-        transformarEnIcono(boton, producto.id);
+            transformarEnIcono(boton, producto.id);
         } else {
-        spanCantidad.textContent = cantidad;
-        actualizarCarrito(producto.id, cantidad);
+            spanCantidad.textContent = cantidad;
+            actualizarCarrito(producto.id, cantidad);
         }
     }, { once: false });
-    }
+}
 
 //Transformar de contador a boton de compra
 function transformarEnIcono(boton, productoId) {
@@ -162,11 +162,12 @@ function actualizarContadorCarrito(carritoArray) {
     } else {
         contador.style.display = 'none';
     }
-}
 
+}
+const carrito = JSON.parse(localStorage.getItem('carritoCineAura')) || [];
 //Evitar que al recargar la página se pierda las selecciones
 function cargarEstadoBotonesDesdeCarrito() {
-    const carrito = JSON.parse(localStorage.getItem('carritoCineAura')) || [];
+
     // Para cada botón, si su producto está en el carrito lo transformamos con la cantidad
     const botonesCompra = document.querySelectorAll('.boton_compra .btn-comprar');
     botonesCompra.forEach(boton => {
@@ -189,7 +190,6 @@ function cargarEstadoBotonesDesdeCarrito() {
             }
         }
     });
-
     actualizarContadorCarrito(carrito);
 }
 
@@ -207,23 +207,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //*************************************************** */
 
-const datos = JSON.parse(sessionStorage.getItem("datosCompra"));
 
-console.log(datos)
+// ✅ Recuperar los datos de boletería desde la página anterior (reserva)
+const datosObtenidos = JSON.parse(sessionStorage.getItem("datosCompra"));
+console.log("🎬 Datos obtenidos desde boletería:", datosObtenidos);
 
-// continuar continuar
-const btnContinuar = document.getElementById("boton_comprar")
-btnContinuar.addEventListener("click", () =>{
-     redirectComprar(datos)
-    } 
-);
 
-function redirectComprar( datos) {
-    const datosCompra = {datos};
-    // guardar en sessionStorage
-    sessionStorage.setItem("datosCompra", JSON.stringify(datosCompra));
+// ✅ Botón para continuar al pago
+const btnContinuar = document.getElementById("boton_comprar");
 
-    // redirigir a la página de pago
-    window.location.href = "../paginas/pagos.html";
-}
+btnContinuar.addEventListener("click", () => {
+  // Combinar los datos existentes con el carrito actual
+  const datosFinales = {
+    ...datosObtenidos, // ← mezcla todo lo que ya estaba (titulo, but, etc.)
+    carrito            // ← agrega el nuevo array
+  };
 
+  // Guardar el nuevo objeto combinado
+  sessionStorage.setItem("datosCompra", JSON.stringify(datosFinales));
+
+  // Ver en consola antes de redirigir (opcional)
+  console.log("📦 Enviando a pagos:", datosFinales);
+
+  // Redirigir a la página de pago
+  window.location.href = "../paginas/pagos.html";
+});

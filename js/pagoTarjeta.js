@@ -1,17 +1,22 @@
-const datos = JSON.parse(sessionStorage.getItem("datosCompra")).datos;
-console.log(datos)
+// Recuperar los datos de compra (película + dulcería + total)
+const datos = JSON.parse(sessionStorage.getItem("datosCompra"));
+console.log("💳 Datos para pago:", datos);
 
+// Capturar el botón de pago
 const boton = document.getElementById("btnPagoTarjeta");
 
 boton.addEventListener("click", () => {
-    console.log("holaa")
-    redirectComprar(datos)
+  console.log("Procesando pago...");
+
+  // Solo se usan temporalmente: simulamos el pago
+  redirectComprar(datos);
 });
 
-function redirectComprar( datos) {
-    const datosCompra = {datos};
-    // guardar en sessionStorage
-    sessionStorage.setItem("datosCompra", JSON.stringify(datosCompra));
-    // redirigir a la página de pago
-    window.location.href = "../paginas/comprobante.html";
+// Función para pasar los datos temporalmente a comprobante
+function redirectComprar(datos) {
+  // Guardar los mismos datos sin duplicar niveles
+  sessionStorage.setItem("datosCompra", JSON.stringify(datos));
+
+  // Redirigir a la página de comprobante
+  window.location.href = "../paginas/comprobante.html";
 }
