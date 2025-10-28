@@ -120,38 +120,35 @@ aside {
 }
 
 section {
-    width: 900px;
+    display: inline-block;
+    max-width: 900px;
     padding: 40px;
     background: linear-gradient(to top, rgb(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     border: 1px solid rgba(255, 255, 255, 0.4);
-    /* Borde solo abajo */
     backdrop-filter: blur(10px);
-    /* efecto de vidrio */
     border-radius: 40px;
 }
 
 .lista_productos {
-    width: auto;
-    display: none;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.lista_productos.combos {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap:30px;                    
+    width: 100%;
 }
 
 .contenedor_producto {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     text-align: left;
     position: relative;
-    width: 230px;
+    max-width: 230px; 
     padding: 20px;
     margin-top: 90px;
+    margin: 90px 8px 0px 8px ;
     border-radius: 30px;
     background: linear-gradient(to bottom right, white, #e9e9e9);
 }

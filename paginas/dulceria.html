@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +12,12 @@
     <script src="../lightbox/js/lightbox-plus-jquery.min.js"></script>
     <title>CineAura | Dulcería</title>
 </head>
-
 <body>
     <div id="header"></div>
     <main>
         <aside>
             <div class="selector">
-                <div><a href="#" data-categoria="combos">Combos</a></div>
+                <div><a href="#" data-categoria="combos" class="activo">Combos</a></div>
                 <div><a href="#" data-categoria="canchita">Canchita</a></div>
                 <div><a href="#" data-categoria="bebidas">Bebidas</a></div>
                 <div><a href="#" data-categoria="snacks">Snacks</a></div>
@@ -41,20 +39,22 @@
                     <iconify-icon icon="tabler:shopping-bag" id="icon_carrito"></iconify-icon>
                 </a>
             </div>
-            <div class="lista_productos combos">
-                <figure class="contenedor_producto">
-                    <img src="../imagenes/10.png" alt="" class="imagen_producto">
-                    <figcaption class="nombre_producto">COMBO AURA</figcaption>
-                    <p class="descripcion_producto">1 Canchita grande salada + 1 Bebida (32oz)</p>
-                    <div class="precio_boton">
-                        <p class="precio"><span>s/.</span> 24.00</p>
-                        <div class="boton_compra">
-                            <a href="#">
-                                <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
-                            </a>
-                        </div>
+            <div id="contenedor_productos" class="lista_productos"></div>
+            <!-- CONTENIDO GENERADO CON JAVASCRIPT
+            <figure class="contenedor_producto">
+                <img src="../imagenes/10.png" alt="" class="imagen_producto">
+                <figcaption class="nombre_producto">COMBO AURA</figcaption>
+                <p class="descripcion_producto">1 Canchita grande salada + 1 Bebida (32oz)</p>
+                <div class="precio_boton">
+                    <p class="precio"><span>s/.</span> 24.00</p>
+                    <div class="boton_compra">
+                        <a href="#">
+                            <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
+                        </a>
                     </div>
-                </figure>
+                </div>
+            </figure>
+
                 <figure class="contenedor_producto">
                     <img src="../imagenes/11.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">COMBO AURA DULCE</figcaption>
@@ -141,7 +141,7 @@
                     <p class="descripcion_producto">Ideal para una peli sin distracciones.</p>
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 11.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -153,10 +153,10 @@
                     <img src="../imagenes/9.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">CANCHITA MEDIANA DULCE</figcaption>
                     <p class="descripcion_producto">Caramelo suave, dorado y adictivo.</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 13.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -168,10 +168,10 @@
                     <img src="../imagenes/7.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">CAMCHITA GRANDE EXTRA MANTEQUILLA</figcaption>
                     <p class="descripcion_producto">Extra crujiente.</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 15.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -183,10 +183,10 @@
                     <img src="../imagenes/6.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">CANCHITA GRANDE ACARAMELADO</figcaption>
                     <p class="descripcion_producto">La combi perfecta entre dulce y salado.</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 18.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -198,10 +198,10 @@
                     <img src="../imagenes/3.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">CANCHITA GIGANTE SALADA</figcaption>
                     <p class="descripcion_producto">Para compartir (o no).</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 20.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -213,10 +213,10 @@
                     <img src="../imagenes/1.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">CANCHITA GIGANTE MIX</figcaption>
                     <p class="descripcion_producto">La combi perfecta pero en su versión gigante.</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 24.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -230,10 +230,10 @@
                     <img src="../imagenes/4.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">GASEOSA MEDIANA</figcaption>
                     <p class="descripcion_producto">Sabor a elección (21 oz)</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 6.50</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -245,10 +245,10 @@
                     <img src="../imagenes/5.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">GASEOSA GRANDE</figcaption>
                     <p class="descripcion_producto">Sabor a elección (32 oz)</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 8.50</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -260,10 +260,10 @@
                     <img src="../imagenes/17.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">FROZEN CINEAURA</figcaption>
                     <p class="descripcion_producto">Granizado de sabores intensos (colores neón inlcuidos).</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 12.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -275,10 +275,10 @@
                     <img src="../imagenes/19.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">AGUA MINERAL</figcaption>
                     <p class="descripcion_producto">Para quienes buscan nivelar el axúcar (600 ml).</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 6.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -290,10 +290,10 @@
                     <img src="../imagenes/18.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">CAFÉ CALIENTE</figcaption>
                     <p class="descripcion_producto">Para los amantes del café y el invierno.</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 7.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -307,10 +307,10 @@
                     <img src="../imagenes/20.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">TABLETA DE CHOCOLATE</figcaption>
                     <p class="descripcion_producto">70% cacao con un 10% de amor cinéfilo.</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 7.50</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -322,10 +322,10 @@
                     <img src="../imagenes/21.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">GOMITAS</figcaption>
                     <p class="descripcion_producto">Colores, formas y sabores que explotan</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 6.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -337,10 +337,10 @@
                     <img src="../imagenes/22.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">MINI COOKIES CHOCOCHIPS</figcaption>
                     <p class="descripcion_producto">Crujientes y dulces, con chispas galácticas</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 7.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -352,10 +352,10 @@
                     <img src="../imagenes/23.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">PALETA FANTASÍA</figcaption>
                     <p class="descripcion_producto">Para grandres y chicos que aman el dulce y la fantasía.</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 5.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -367,10 +367,10 @@
                     <img src="../imagenes/24.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">SNACKS SALADOS</figcaption>
                     <p class="descripcion_producto">Pretzels, papitas o nachitos.</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 5.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -384,10 +384,10 @@
                     <img src="../imagenes/25.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">COMBO SOCIO CINEFAN</figcaption>
                     <p class="descripcion_producto">1 canchita grande + 1 gaseosa (32oz) + 1 golosina.</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 26.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -399,10 +399,10 @@
                     <img src="../imagenes/26.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">REFILL DE CANCHITA</figcaption>
                     <p class="descripcion_producto">Recargas libres durante la pelicula</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 8.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -414,10 +414,10 @@
                     <img src="../imagenes/27.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">REFILL DE BEBIDA</figcaption>
                     <p class="descripcion_producto">Recargas libres durante la película + Vaso Socio CineAura</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 10.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -429,10 +429,10 @@
                     <img src="../imagenes/28.png" alt="" class="imagen_producto">
                     <figcaption class="nombre_producto">CANCHITA SOCIO 2x1</figcaption>
                     <p class="descripcion_producto">Llevate 2 canchitas personales por el precio de 1</p>
-                    
+
                     <div class="precio_boton">
                         <p class="precio"><span>s/.</span> 11.00</p>
-                        
+
                         <div class="boton_compra">
                             <a href="#">
                                 <iconify-icon icon="tabler:shopping-bag" id="icon_bolsa"></iconify-icon>
@@ -441,6 +441,7 @@
                     </div>
                 </figure>
             </div>
+            -->           
         </section>
     </main>
     <footer>
@@ -472,9 +473,9 @@
             </div>
         </div>
     </footer>
+    <script src="../js/dataDulceria.js"></script>
     <script src="../js/dulceria.js"></script>
     <script src="../componentes/header.js"></script>
     <script src="../js/dataPelis.js"></script>
 </body>
-
 </html>
