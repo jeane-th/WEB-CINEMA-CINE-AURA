@@ -1,0 +1,157 @@
+iconify-icon {
+    color: white;
+    font-size: 35px;
+}
+
+nav {
+    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0.05));
+    border-bottom: solid 1px rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(25px);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.contenedor {
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    color: white;
+}
+
+.logo span {
+    color: #ed0133;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu a {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 0.8);
+    text-shadow: 0 2px 4px #121212;
+    padding: 3px 7px;
+    border-radius: 18px;
+    border: 2px solid transparent;
+}
+
+.menu a.activo {
+    color: white;
+    background-color: #ed0133;
+}
+
+.menu a:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+.opciones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opciones a {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.icon_texto {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    transition: opacity 0.3s ease, width 0.3s ease, margin-right 0.3s ease;
+}
+
+.opciones a:hover .icon_texto {
+    opacity: 1;
+    width: auto;
+    margin-right: 6px;
+}
+
+.material-icons-round {
+    font-size: 28px;
+    color: white;
+}
+
+/* estilos buscador */
+
+.buscador {
+    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0.05));
+    border-bottom: solid 1px rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(25px);
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 63px;
+    display: none;
+    z-index: 1000;
+}
+
+header .buscador--input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 30px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0.05));
+    box-shadow: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto;
+}
+header .buscador--input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.resultados {
+    margin-top: 10px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.resultado-item {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.resultado-item:hover {
+    background: #f0f0f08a;
+}
+
+.resultado-item img {
+    width: 50px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+}

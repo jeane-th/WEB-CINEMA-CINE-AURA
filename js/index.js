@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function peliInfo(id) {
     console.log("ID:", id);
-    window.location.href = `../paginas/boleteria.html?id=${id}`;
+    window.location.href = `./paginas/boleteria.html?id=${id}`;
 }
 
 
