@@ -16,7 +16,7 @@ const dataPelis =
     },
     {
       "id": 1311031,
-      "titulo": "Guardianes de la noche: Kimetsu no Yaiba La fortaleza infinita",
+      "titulo": "Kimetsu no Yaiba La fortaleza infinita",
       "fecha": "2025-07-18",
       "duracion": 155,
       "clasificacion": "APT",
@@ -27,20 +27,6 @@ const dataPelis =
       "background": "https://image.tmdb.org/t/p/w500/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
       "trailer": "https://www.youtube.com/embed/X3E4zogzWsY",
       "formato": "Prime",
-    },
-    {
-      "id": 1038392,
-      "titulo": "Expediente Warren: El último rito",
-      "fecha": "2026-01-03",
-      "duracion": 135,
-      "clasificacion": "APT",
-      "genero": "Terror",
-      "sinopsis": "Los investigadores de lo paranormal Ed y Lorraine Warren se enfrentan a un último caso aterrador en el que están implicadas entidades misteriosas a las que deben enfrentarse.",
-      "idioma": "EN",
-      "poster": "https://image.tmdb.org/t/p/w500/qdoqogLNR6myoRrxYFxF4UTkFne.jpg",
-      "background": "https://image.tmdb.org/t/p/w500/Fb8gyhkAQorxr98jllYoXurWvj.jpg",
-      "trailer": "https://www.youtube.com/embed/FIiiMiC7GGY",
-      "formato": "Regular",
     },
     {
       "id": 1197137,
@@ -200,7 +186,7 @@ const dataPelis =
     {
       "id": 1078605,
       "titulo": "Weapons",
-      "fecha": "2025-08-04",
+      "fecha": "2026-02-04",
       "duracion": 129,
       "clasificacion": "APT",
       "genero": "Terror, Misterio",
@@ -214,7 +200,7 @@ const dataPelis =
     {
       "id": 1054867,
       "titulo": "Una batalla tras otra",
-      "fecha": "2025-09-23",
+      "fecha": "2026-02-23",
       "duracion": 162,
       "clasificacion": "APT",
       "genero": "Acción, Suspense, Crimen",
@@ -251,6 +237,20 @@ const dataPelis =
       "poster": "https://image.tmdb.org/t/p/w500/kjQXYc2Abhy3TBgAZGzJRhN1JaV.jpg",
       "background": "https://image.tmdb.org/t/p/w500/AeDzjt00Hfh9CuW7TIUdYBJmWYM.jpg",
       "trailer": "https://www.youtube.com/embed/Ns6ZEpQ1xS0",
+      "formato": "Regular",
+    },
+        {
+      "id": 1038392,
+      "titulo": "Expediente Warren: El último rito",
+      "fecha": "2026-01-03",
+      "duracion": 135,
+      "clasificacion": "APT",
+      "genero": "Terror",
+      "sinopsis": "Los investigadores de lo paranormal Ed y Lorraine Warren se enfrentan a un último caso aterrador en el que están implicadas entidades misteriosas a las que deben enfrentarse.",
+      "idioma": "EN",
+      "poster": "https://image.tmdb.org/t/p/w500/qdoqogLNR6myoRrxYFxF4UTkFne.jpg",
+      "background": "https://image.tmdb.org/t/p/w500/Fb8gyhkAQorxr98jllYoXurWvj.jpg",
+      "trailer": "https://www.youtube.com/embed/FIiiMiC7GGY",
       "formato": "Regular",
     },
     {
@@ -298,7 +298,7 @@ const dataPelis =
     {
       "id": 1218925,
       "titulo": "Chainsaw Man - La película: El arco de Reze",
-      "fecha": "2025-09-19",
+      "fecha": "2025-12-19",
       "duracion": 100,
       "clasificacion": "APT",
       "genero": "Animación, Acción, Fantasía",
@@ -335,20 +335,6 @@ const dataPelis =
       "poster": "https://image.tmdb.org/t/p/w500/4oLLOAT55JhAoe73VliaSKFvEEr.jpg",
       "background": "https://image.tmdb.org/t/p/w500/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
       "trailer": "https://www.youtube.com/embed/sa_6BS_VY-M",
-      "formato": "Regular",
-    },
-    {
-      "id": 1007734,
-      "titulo": "Nadie 2",
-      "fecha": "2025-08-13",
-      "duracion": 89,
-      "clasificacion": "APT",
-      "genero": "Acción, Suspense",
-      "sinopsis": "Cuatro años después de enfrentarse involuntariamente a la mafia rusa, Hutch Mansell sigue intentando saldar una deuda de 30 millones de dólares con golpes a criminales internacionales. Agotado y distanciado de su familia, organiza unas vacaciones con su esposa e hijos en Plummerville, el lugar donde solía ir con su hermano de niño. Pero un pequeño altercado los convierte en el objetivo de un peligroso mafioso local y de su corrupto sheriff, poniendo en riesgo toda la familia.",
-      "idioma": "EN",
-      "poster": "https://image.tmdb.org/t/p/w500/qwdBh0102NX5fslXv3L9MSlXqKc.jpg",
-      "background": "https://image.tmdb.org/t/p/w500/mEW9XMgYDO6U0MJcIRqRuSwjzN5.jpg",
-      "trailer": "https://www.youtube.com/embed/Qe_0NUZTST0",
       "formato": "Regular",
     },
     {
@@ -396,7 +382,7 @@ const dataPelis =
     {
       "id": 1022787,
       "titulo": "Elio",
-      "fecha": "2025-06-18",
+      "fecha": "2025-12-18",
       "duracion": 98,
       "clasificacion": "APT",
       "genero": "Familia, Comedia, Aventura, Animación, Ciencia ficción",
@@ -647,3 +633,6 @@ const dataPelis =
     }
 
   ]
+
+
+  

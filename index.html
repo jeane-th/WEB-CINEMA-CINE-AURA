@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,84 +9,30 @@
     <link rel="stylesheet" href="./css/home.css">
     <title>CineAura</title>
 </head>
+
 <body>
-    <header>
-        <!-- GRADIENTES DEL MENÚ -->
-        <div class="black_gradient"></div>
-        <div class="pink_gradient"></div>
-
-        <!-- MENÚ DE NAVEGACIÓN -->
-        <nav>
-            <div class="contenedor">
-                <div class="logo">
-                    <h1>Cine<span>Aura</span></h1>
-                </div>
-                <div class="menu">
-                    <a href="paginas/peliculas.html">Películas</a>
-                    <a href="paginas/dulceria.html">Dulcería</a>
-                    <a href="paginas/socios.html">Socios</a>
-                    <a href="paginas/noticias.html">Noticias</a>
-                </div>
-                <div class="opciones">
-                    <a href="">
-                        <span class="icon_texto">Buscar</span>
-                        <span class="material-icons-round">search</span>
-                    </a>
-                    <a href="paginas/acceder.html">
-                        <span class="icon_texto">Acceder</span>
-                        <span class="material-icons-round">account_circle</span>
-                    </a>
-                    <a href="paginas/ayuda.html">
-                        <span class="icon_texto">Ayuda</span>
-                        <span class="material-icons-round">help</span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <!-- FIN MENÚ DE NAVEGACIÓN -->
-
-        <!-- Banner -->
+    <div class="black_gradient"></div>
+    <div class="pink_gradient"></div>
+    <div id="header"></div>
+    <!-- FIN MENÚ DE NAVEGACIÓN -->
+    <main>
         <div class="carrusel">
-
             <!-- IMÁGENES -->
-            <div class="imagenes">
-                <div id="item_1" class="item">
-                    <img src="./imagenes/portada_1.jpg">
-                </div>
-                <div id="item_2" class="item">
-                    <img src="./imagenes/portada_2.jpg">
-                </div>
-                <div id="item_3" class="item">
-                    <img src="./imagenes/portada_3.jpg">
-                </div>
-                <div id="item_4" class="item">
-                    <img src="./imagenes/portada_4.jpg">
-                </div>
-                <div id="item_5" class="item">
-                    <img src="./imagenes/portada_5.jpg">
+            <!-- <img class="carrusel_imagen" src="./imagenes/portada_1.jpg"> -->
+            <div class="texto">
+                <h2 class="tit">Lilo & Stitch</h2>
+                <p class="Despc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="boton_comprar">
+                    <button id="btnComprarHome">
+                        Comprar
+                        <iconify-icon icon="f7:tickets-fill" class="icon_tickets"></iconify-icon>
+                    </button>
                 </div>
             </div>
-
-            <div class="bottom_gradient"></div>
-
-            <!-- TEXTO -->
-            <div class="texto_carrusel">
-                <div class="texto">
-                    <h2 class="tit">Lilo & Stitch</h2>
-                    <p class="Despc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="boton_comprar">
-                        <a href="paginas/boleteria.html">
-                            Comprar
-                            <iconify-icon icon="f7:tickets-fill" class="icon_tickets"></iconify-icon>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
             <!-- BOTONES -->
             <div class="content_number_button">
                 <div class="number_button">
-                    <a href="#item_1">
+                    <!-- <a href="#item_1">
                         <iconify-icon icon="fluent:number-circle-1-20-regular"></iconify-icon>
                     </a>
                     <a href="#item_2">
@@ -99,26 +46,24 @@
                     </a>
                     <a href="#item_5">
                         <iconify-icon icon="fluent:number-circle-5-20-regular"></iconify-icon>
-                    </a>
+                    </a> -->
                 </div>
             </div>
+            <div class="bottom_gradient"></div>
         </div>
-        <!-- FIN banner -->
-    </header>
-    <main>
-        <div class="cont_cartelera">
+        <div class="cont_cartelera ancho_maximo">
             <div class="texto_2">
-                <a href="paginas/peliculas.html">EN CARTELERA
-                    <iconify-icon icon="mdi:chevron-right-circle-outline"></iconify-icon>
-                </a>
+                <p>EN CARTELERA
+                    <!-- <iconify-icon icon="mdi:chevron-right-circle-outline"></iconify-icon> -->
+                </p>
             </div>
             <div class="selector_peliculas">
                 <div class="peliculas">
-                    <img src="./imagenes/pelicula_1.jpeg" id="p_1">
+                    <!-- <img src="./imagenes/pelicula_1.jpeg" id="p_1">
                     <img src="./imagenes/pelicula_2.jpeg" id="p_2">
                     <img src="./imagenes/pelicula_3.jpeg" id="p_3">
                     <img src="./imagenes/pelicula_4.jpeg" id="p_4">
-                    <img src="./imagenes/pelicula_5.png" id="p_5">
+                    <img src="./imagenes/pelicula_5.png" id="p_5"> -->
                 </div>
                 <div class="flechas">
                     <div class="flecha_izquierda">
@@ -134,12 +79,12 @@
                 </div>
             </div>
             <div class="boton_comprar" id="comprar_2">
-                <a href="/WEB-CINEMA-CINE-AURA-main/paginas/peliculas.html">Comprar
+                <a href="./paginas/peliculas.html">Ver cartelera
                     <iconify-icon icon="f7:tickets-fill" class="icon_tickets"></iconify-icon>
                 </a>
             </div>
         </div>
-        <div class="cont_banner">
+        <div class="cont_banner ancho_maximo">
             <img src="./imagenes/banner.png">
             <div class="cont_texto_banner">
                 <div class="texto_banner">
@@ -153,58 +98,75 @@
                 </div>
             </div>
         </div>
-        <div class="cont_estrenos">
+        <div class="cont_estrenos ancho_maximo">
             <div class="texto_3">
                 <a href="paginas/estrenos.html">PRÓXIMOS ESTRENOS
                     <iconify-icon icon="mdi:chevron-right-circle-outline"></iconify-icon>
                 </a>
             </div>
-            <div class="video_1">
-                <video width="500" controls poster="../imagenes/img_trailer_1.jpg">
-                    <source src="./videos/trailer_1.mp4" type="video/mp4">
-                </video>
-                <div class="texto_video">
-                    <div class="texto_preventa">
-                        <p id="preventa">Preventa</p>
-                        <iconify-icon icon="mdi:calendar-outline" id="icon_calendar"></iconify-icon>
+            <div id="cont_estrenos_home">
+                <!-- <div class="video_1">
+                    <video width="500" controls poster="../imagenes/img_trailer_1.jpg">
+                        <source src="./videos/trailer_1.mp4" type="video/mp4">
+                    </video>
+                    <div class="texto_video">
+                        <div class="texto_preventa">
+                            <p id="preventa">Preventa</p>
+                            <iconify-icon icon="mdi:calendar-outline" id="icon_calendar"></iconify-icon>
+                        </div>
+                        <h3>Cómo entrenar a tu dragón</h3>
+                        <p id="desc">Un niño vikingo llamado Hipo desafía la tradición al hacerse amigo de un dragón
+                            llamado
+                            Chimuelo.</p>
                     </div>
-                    <h3>Cómo entrenar a tu dragón</h3>
-                    <p id="desc">Un niño vikingo llamado Hipo desafía la tradición al hacerse amigo de un dragón llamado Chimuelo.</p>
                 </div>
-            </div>
-            <div class="video_2">
-                <video width="500" controls poster="../imagenes/img_trailer_2.jpg">
-                    <source src="../videos/trailer_2.mp4" type="video/mp4">
-                </video>
-                <div class="texto_video">
-                    <div class="texto_preventa">
-                        <p id="preventa">Preventa</p>
-                        <iconify-icon icon="mdi:calendar-outline" id="icon_calendar"></iconify-icon>
+                <div class="video_2">
+                    <video width="500" controls poster="../imagenes/img_trailer_2.jpg">
+                        <source src="../videos/trailer_2.mp4" type="video/mp4">
+                    </video>
+                    <div class="texto_video">
+                        <div class="texto_preventa">
+                            <p id="preventa">Preventa</p>
+                            <iconify-icon icon="mdi:calendar-outline" id="icon_calendar"></iconify-icon>
+                        </div>
+                        <h3>Megan 2.0</h3>
+                        <p id="desc">"Megan 2.0" continúa la historia de la muñeca asesina impulsada por IA, M3GAN, dos
+                            años
+                            después de los eventos de la primera película.</p>
                     </div>
-                    <h3>Megan 2.0</h3>
-                    <p id="desc">"Megan 2.0" continúa la historia de la muñeca asesina impulsada por IA, M3GAN, dos años después de los eventos de la primera película.</p>
-                </div>
+                </div> -->
             </div>
         </div>
-        <div class="cont_socio">
-            <h3><a href="paginas/socios.html">¿Ya eres Socio CineAura?</a></h3>
+        <div class="cont_socio ancho_maximo">
+            <h3>¿Ya eres Socio CineAura?</a></h3>
             <div class="cards">
-                <div id="start">
-                    <h4>Start</h4>
-                    <img src="./imagenes/Start.png">
-                </div>
-                <div id="plus">
-                    <h4>Plus</h4>
-                    <img src="./imagenes/Plus.png">
-                </div>
-                <div id="premium">
-                    <h4>Premium</h4>
-                    <img src="./imagenes/Premium.png">
-                </div>
-                <div id="black">
-                    <h4>Black</h4>
-                    <img src="./imagenes/Black.png">
-                </div>
+                <a href="paginas/socios.html">
+                    <div id="start">
+                        <h4>Start</h4>
+                        <img src="./imagenes/Start.png">
+                    </div>
+                </a>
+                <a href="paginas/socios.html">
+                    <div id="plus">
+                        <h4>Plus</h4>
+                        <img src="./imagenes/Plus.png">
+                    </div>
+                </a>
+                <a href="paginas/socios.html">
+                    <div id="premium">
+                        <h4>Premium</h4>
+                        <img src="./imagenes/Premium.png">
+                    </div>
+                </a>
+                <a href="paginas/socios.html">
+                    <div id="black">
+                        <h4>Black</h4>
+                        <img src="./imagenes/Black.png">
+                    </div>
+                </a>
+
+
+
             </div>
         </div>
     </main>
@@ -237,6 +199,9 @@
             </div>
         </div>
     </footer>
-        <script src="./js/index.js"></script>
+    <script src="./componentes/header.js"></script>
+    <script src="./js/dataPelis.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
