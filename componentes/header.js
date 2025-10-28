@@ -62,19 +62,23 @@ fetch("../componentes/header.html")
         resultados.innerHTML = "<div class='resultado-item'>No se encontraron películas.</div>";
         return;
       }
+
       items.forEach(p => {
         const div = document.createElement("div");
         div.className = "resultado-item";
         div.innerHTML = `
-          <img src="${p.poster}" alt="${p.titulo}">
-          <span class="titulo-peli">${p.titulo}</span>
-        `;
-        div.addEventListener("click", () => {
-          window.location.href = `../paginas/detalle.html?id=${p.id}`; // ajusta ruta si hace falta
-        });
+      <img src="${p.poster}" alt="${p.titulo}">
+      <span class="titulo-peli">${p.titulo}</span>
+    `;
+        div.addEventListener("click", () => peliInfo(p.id));
         resultados.appendChild(div);
       });
     }
+    function peliInfo(id) {
+      console.log("ID:", id);
+      window.location.href = `../paginas/boleteria.html?id=${id}`;
+    }
+
 
     // Filtrado en vivo (usa dataPelis que debe estar cargado antes)
     inputBuscador.addEventListener("input", () => {
