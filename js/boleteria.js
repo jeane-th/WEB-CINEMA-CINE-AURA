@@ -103,6 +103,6 @@ function redirectComprar( but, titulo,poster,formato, cantBol, precio) {
     sessionStorage.setItem("datosCompra", JSON.stringify(datosCompra));
 
     // redirigir a la página de pago
-    window.location.href = "../paginas/pagos.html";
+    window.location.href = "../paginas/dulceria.html";
 }
 

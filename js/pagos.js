@@ -1,4 +1,7 @@
-const datos = JSON.parse(sessionStorage.getItem("datosCompra"));
+const datos = JSON.parse(sessionStorage.getItem("datosCompra")).datos;
+
+console.log(datos)
+
 
 const producto1 = document.getElementById("producto1");
 producto1.innerHTML = `

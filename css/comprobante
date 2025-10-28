@@ -1,0 +1,41 @@
+    .mensaje_exito {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .icono_exito {
+      font-size: 80px;
+      color: #2ecc71;
+    }
+    .resumen_final {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-top: 30px;
+      max-width: 600px;
+      margin-inline: auto;
+    }
+    .detalle p, .total p, .total h3 {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    .acciones {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+    }
+    .acciones a, .acciones button {
+      background: #ff4757;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .acciones a:hover, .acciones button:hover {
+      background: #e84118;
+    }

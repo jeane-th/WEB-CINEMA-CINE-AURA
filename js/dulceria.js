@@ -19,3 +19,24 @@ enlaces.forEach(enlace => {
     });
 });
 });
+
+const datos = JSON.parse(sessionStorage.getItem("datosCompra"));
+
+console.log(datos)
+
+// continuar continuar
+const btnContinuar = document.getElementById("boton_comprar")
+btnContinuar.addEventListener("click", () =>{
+     redirectComprar(datos)
+    } 
+);
+
+function redirectComprar( datos) {
+    const datosCompra = {datos};
+    // guardar en sessionStorage
+    sessionStorage.setItem("datosCompra", JSON.stringify(datosCompra));
+
+    // redirigir a la página de pago
+    window.location.href = "../paginas/pagos.html";
+}
+

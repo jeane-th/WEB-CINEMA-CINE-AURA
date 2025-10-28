@@ -2,7 +2,7 @@
 const usuariosFijos = [
   { nombre: "Bladimir", clave: "123456" },
   { nombre: "Karla", clave: "abcde1" },
-  { nombre: "Jeane", clave: "pass12" },
+  { nombre: "Jeaneth", clave: "123456" },
   { nombre: "Brisa", clave: "clave2" },
   { nombre: "Nicole", clave: "grupo5" }
 ];
@@ -32,18 +32,15 @@ if (form) {
     }
 
     if (encontrado) {
-      mostrarMensaje(`✅ Bienvenido ${usuario} 😄`, "success");
-      setTimeout(() => {
-        window.location.href = "../index.html";
-      }, 1500);
+      mostrarPantallaBienvenida(encontrado.nombre || usuario);
     } else {
       mostrarMensaje("❌ Usuario o contraseña incorrectos");
     }
   });
 }
 
-// ---- FUNCIÓN PARA MENSAJES ----
-function mostrarMensaje(texto, tipo = "error") {
+// ---- FUNCIÓN PARA MENSAJE DE ERROR ----
+function mostrarMensaje(texto) {
   let msg = document.getElementById("mensajeLogin");
   if (!msg) {
     msg = document.createElement("div");
@@ -52,23 +49,74 @@ function mostrarMensaje(texto, tipo = "error") {
   }
 
   msg.textContent = texto;
-  msg.className = tipo;
   msg.style.position = "fixed";
-  msg.style.top = "20px";
+  msg.style.top = "30px";
   msg.style.left = "50%";
   msg.style.transform = "translateX(-50%)";
-  msg.style.backgroundColor = tipo === "success" ? "#4CAF50" : "#ed0133";
+  msg.style.backgroundColor = "#ed0133";
   msg.style.color = "white";
   msg.style.padding = "10px 20px";
   msg.style.borderRadius = "10px";
   msg.style.fontWeight = "bold";
   msg.style.boxShadow = "0 4px 10px rgba(0,0,0,0.3)";
   msg.style.zIndex = "9999";
-  msg.style.opacity = "1";
-  msg.style.transition = "opacity 0.3s ease";
 
-  setTimeout(() => {
-    msg.style.opacity = "0";
-    setTimeout(() => msg.remove(), 500);
-  }, 2000);
-}   
+  setTimeout(() => msg.remove(), 2000);
+}
+
+// ---- FUNCIÓN PARA MOSTRAR LA BIENVENIDA ----
+function mostrarPantallaBienvenida(nombre) {
+
+  const mensaje = document.querySelector(".mensaje") || document.body;
+
+  // Limpiar contenido actual
+  mensaje.innerHTML = "";
+
+  const container = document.querySelector(".container") || document.body;
+
+  // Limpiar contenido actual
+  container.innerHTML = "";
+
+  container.innerHTML = `
+      <div class="login-title">Bienvenido</div>
+            <p class="login-description">
+     
+      </p>
+      <div class="login-title"> 🎉 ${nombre} 🎉</div>
+      <p class="login-description">
+        Gracias por elegirnos⭐🍿
+      </p>
+      <p class="login-description">
+      </p>
+      <p class="login-description">
+      Total a pagar: S/ ${datos.precio * datos.cantBol}
+      </p>
+      <!-- Formulario único -->
+      <form id="loginForm" class="loginForm">
+        <button id="butonLogin" class="button-login" type="submit">Pagar</button>
+      </form>
+  `;
+  // Botón Pagar
+  const boton = document.getElementById("butonLogin");
+
+  boton.addEventListener("click", () => {
+      redirectComprar(datos)
+  });
+
+  // Agregar al DOM
+  container.appendChild(boton);
+}
+
+const datos = JSON.parse(sessionStorage.getItem("datosCompra")).datos;
+console.log(datos)
+
+
+function redirectComprar( datos) {
+    const datosCompra = {datos};
+    // guardar en sessionStorage
+    sessionStorage.setItem("datosCompra", JSON.stringify(datosCompra));
+
+    // redirigir a la página de pago
+    window.location.href = "../paginas/pagoTarjeta.html";
+}
+
