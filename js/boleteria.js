@@ -28,6 +28,14 @@ div.innerHTML = `
         </p>
     `;
 
+const main = document.querySelector("main");
+main.style.backgroundImage = `
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${pelicula.background})
+        `;
+main.style.backgroundSize = "cover";
+main.style.backgroundPosition = "center";
+
+
 const ocupadas = ['A-3', 'A-4', 'C-1', 'C-2', 'C-3', 'D-8']
 const seleccionadas = []
 
